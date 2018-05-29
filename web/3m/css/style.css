@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+.obj_abs { position: absolute;}
+.obj_fix { position: fixed;}
+.obj_notxt { text-indent: -9999px;}
+input, button { border: 0; font-family:"微軟正黑體";}
+button { cursor: pointer;}
+* { 
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+a[href *="updog"]{display:none!important;}
+
+/* common
+============================================*/
+html, body { width:100%; height:100%; min-width:1000px; min-height: 700px;}
+body { background: url(../images/bg_body.jpg) center top; font-family:"微軟正黑體"; font-size:12px; color:#333;}
+.wrap { position: relative; width: 1000px; height: 3550px; margin: 0 auto;}
+h1 { display: block; top: 19px; left: 25px; z-index: 10;}
+h1 a { display: block; width: 218px; height: 38px; background: url(../images/logo.png) no-repeat;}
+
+.content { position: relative; left: 0; width: 1000px; background-position: center top; background-repeat: no-repeat;}
+.main1 { top: 118px; height: 486px; background-image: url(../images/img_main1.png);}
+.main2 { top: 76px; height: 442px; background-image: url(../images/img_main2.png);}
+.main2 .btn_share { bottom: -39px; width: 162px; height: 40px; background: url(../images/btn_share.png) no-repeat; z-index: 10;}
+.main2 .btn_share:hover { background-position: 0 -40px;}
+.main2 .ada { left: 260px;}
+.main2 .kisplay { left: 675px;}
+.main3 { top: 183px; left: -39px; width: 1019px; height: 945px; background-image: url(../images/img_main3.png);}
+.main3 .btn_buy { top: 207px; right: 40px; width: 167px; height: 56px; background: url(../images/btn_buy.png) no-repeat;}
+.main3 .btn_buy:hover { background-position: 0 -56px;}
+.main3 .btn_join { bottom: 31px; right: 186px; width: 238px; height: 72px; background: url(../images/btn_join.png) no-repeat;}
+.main3 .btn_join:hover { background-position: 0 -72px;}
+.main4 { top: 227px; left: 41px; width: 918px; height: 795px; background: url(../images/img_main4.png) no-repeat;}
+.main5 { top: 274px; left: 20px; width: 960px; height: 572px; background: url(../images/img_main5.png) no-repeat;}
+

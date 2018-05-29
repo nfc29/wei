@@ -1,0 +1,222 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url("reset.css");
+a[href *="updog"]{display:none!important;}
+
+/* 共用
+============================================*/
+body, html { width:100%; height:100%; min-width:1030px; font-family: "微軟正黑體","新細明體", Arial, Helvetica, sans-serif; font-size:13px; color:#666;}
+body { }
+.wrap { position:relative; width:100%; height:100%; background:url(../images/bg_main.jpg) left top repeat-x; z-index:1;}
+
+h1 a { display:block; position:absolute; bottom:45px; left:15px; width:443px; height:75px; background:url(../images/logo.png) no-repeat; text-indent:-9999px;}
+.loginBox { position:absolute; bottom:53px; right:20px;}
+.loginBox input[type="text"]{ margin:0 5px 0 0;}
+.loginBox #btn_login { width:60px; height:22px; background:#999; border:#929292 1px solid; color:#fff;}
+.loginBox #btn_login:hover { background:#099;}
+.loginBox .remeberMe { position:absolute; top:-30px; right:0;}
+.loginBox .joinMember { color:#255a4d; text-decoration:none;}
+.loginBox .joinMember:hover { color:#68b4ac;}
+
+.footer { clear:both; width:100%; height:56px; margin:30px 0 0 0; padding:25px 0 0 0; background:url(../images/bg_footer.jpg) repeat-x; font-size:12px; color:#666;}
+.footerBox { position:relative; width:970px; margin:0 auto;}
+.footer p { padding:0 0 10px 0;}
+.linkLogo { display:block; position:absolute; top:-5px; right:0; overflow:hidden;}
+.linkLogo li { display:block; float:left; margin:0 0 0 10px;}
+
+
+
+/* 首頁
+============================================*/
+.index_header { position:absolute; top:0; left:0; width:100%; height:158px; background:url(../images/bg_header.png) left bottom repeat-x; z-index:5;}
+.index_header .header_content { position:relative; width:1030px; height:158px; margin:0 auto;}
+
+.index_banner { width:100%; height:494px; padding:135px 0 0 0; background:url(../images/index_banner.jpg) center 135px no-repeat;}
+
+.index_content { position:relative; width:975px; margin:0 auto; padding:80px 28px 0 27px;}
+.index_menu { position:absolute; top:-125px; left:0; width:975px; height:138px; padding:27px 28px 27px 27px; background:url(../images/bg_indexMenu.png); overflow:hidden;}
+.index_menu li { display:block; float:left;}
+.index_menu a { display:block; height:138px; text-indent:-9999px; background-repeat:no-repeat;}
+.index_menu .menu1 a { width:247px; background:url(../images/mouse_28.png);}
+.index_menu .menu2 a { width:247px; background:url(../images/mouse_29.png);}
+.index_menu .menu3 a { width:248px; background:url(../images/mouse_30.png);}
+.index_menu .menu4 a { width:233px; background:url(../images/mouse_31.png);}
+.index_menu a:hover { background-position:0 -138px;}
+
+.newsBox { position:absolute; top:693px; right:27px; width:975px; height:25px; font-size:13px; color:#255a4d; overflow:hidden; z-index:6;}
+.newsBox ul { display:block; position:absolute; top:0; right:0;}
+.newsBox li a { display:block; clear:both; width:975px; height:21px; padding:4px 0 0 0; color:#255a4d; white-space:nowrap; overflow:hidden;}
+.newsBox li a:hover { color:#333;}
+.newsBox li span { margin:3px 5px 0 0; padding:3px 5px; background:#255a4d; color:#fff;}
+.newsBox li a:hover span { background:#333;}
+
+
+
+/* 內頁共用
+============================================*/
+.main_header { position:relative; width:1030px; height:161px; margin:0 auto;}
+.main_header .newsBox { top:175px; right:20px; width:500px;}
+.main_header .newsBox li a { width:500px; text-align:right;}
+.main_banner { width:100%; height:330px; margin:0; background:url(../images/main_banner.jpg) center bottom no-repeat;}
+.main_content { position:relative; clear:both; width:970px; margin:0 auto; padding:20px 0 0 0;}
+.main_title { display:block; width:960px; margin:0 auto; padding:10px 0 0 10px; border-left:#547296 5px solid; font-size:30px; font-weight:bold; color:#547296; overflow:hidden;}
+
+/* 主選單 */
+.menu { display:block; position:absolute; bottom:-10px; left:15px; width:1000px; height:48px; overflow:hidden;}
+.menu li { display:block; float:left; height:48px; font-size:15px; line-height:39px; color:#67ceb5;}
+.menu li a { display:block; height:48px; padding:0 15px; color:#fff;}
+.menu li a:hover, .menu li a.now { background:url(../images/bg_menu.png) repeat-x;}
+.contactTel { display:block; position:absolute; bottom:5px; right:15px; width:184px; height:24px; background:url(../images/tel.png) no-repeat; text-indent:-9999px;}
+
+/* banner輪播 */
+.main_slider { position:absolute; top:171px; left:50%; width:1025px; height:295px; margin:0 0 0 -511px; overflow:hidden;}
+
+/* 右側浮動banner */
+#sidebar { position: absolute; top:90px; right:10px; width:130px; z-index:9999;}
+#cart { position: absolute; width: 130px;}
+#cart .link_banner { position:relative; width:130px; height:280px; margin:5px 0 0 0; background:#fff;}
+#cart p { text-align:center; line-height:18px;}
+
+
+
+/* 產品頁共用
+============================================*/
+/* 次選單 */
+.subMenuBox { clear:both; width:100%; padding:10px 0 15px 0; border-bottom:#333 1px solid;}
+.subMenu { display:block; width:1000px; margin:0 auto; overflow:hidden;}
+.subMenu li { display:block; float:left; margin:0 3px 0 0;}
+.subMenu li a { display:block; padding:10px 12px; font-size:16px; color:#2986b6;}
+.subMenu li a:hover, .subMenu li a.now { background:#387594; color:#fff; border-radius:10px;}
+.subMenu li a span { margin:0 5px 0 0;}
+
+/* 大標 */
+.product_title { display:block; position:relative; height:70px; margin:20px 0 0 0; padding:0 0 0 75px; background:url(../images/icon_h2.png) no-repeat; border-bottom:#aaa 1px solid;}
+.product_title h2 { display:block; float:left; height:40x; padding:30px 10px 0 0;  font-size:30px; color:#b6b6b6;}
+.product_title span { display:block; float:left; width:226px; height:70px; background:url(../images/icon_h2Span.png) left bottom no-repeat;}
+
+/* 產品搜尋 */
+.product_search { float:right; margin:35px 0 0 0;}
+.product_search #search { margin:0 5px 0 0; font-family:"微軟正黑體"; color:#888;}
+.product_search #btn_search { width:60px; height:22px; background:#999; border:#929292 1px solid; color:#fff;}
+.product_search #btn_search:hover { background:#099;}
+
+/* 導覽列 */
+.navbar { display:block; position:absolute; bottom:-25px; right:0; color:#999;}
+.navbar a { color:#2986b6;}
+.navbar a:hover { color:#003366;}
+
+/* 產品列表 */
+.product_list { width:970px; padding:35px 0 0 0;}
+.product_list ul { display:block; padding:20px 0 35px 0; border-bottom:#aaa 1px solid; overflow:hidden;}
+.product_list ul li { display:block; position:relative; float:left; width:180px; height:200px; margin:0 7px; background:url(../images/probg.gif) no-repeat;}
+.product_list ul li img { display:block; position:absolute; top:8px; left:9px; width:160px; height:160px; border:#999 1px solid; border-bottom:#003366 5px solid;}
+.product_list ul li a:hover img { border-color:#0099cc;}
+.product_list ul li h3 { display:block; position:absolute; bottom:0; left:0; width:180px; margin:10px 0 0 0; font-size:14px; color:#003366; text-align:center;}
+
+/* 產品內頁 */
+.product_main { width:970px; padding:50px 0 30px 0; overflow:hidden;}
+.bigPic { display:block; float:left; width:430px; height:430px; padding:0 0 20px 0; overflow:hidden;}
+.bigPic img{ display:none; position:absolute; width:430px; height:430px;}
+.rightBox { display:block; float:right; width:520px; padding:0 0 20px 0;}
+.thumbs { display:block; width:520px;}
+.thumbs li { display:block; float:left; width:95px; height:95px; margin:0 5px 5px 0; border:#eee 2px solid; cursor:pointer;}
+.thumbs li:hover, .thumbs li.active { border:#ccc 2px solid;}
+.thumbs li img { width:95px; height:95px;}
+.product_data { display:block; width:520px; padding:0 0 20px 0;}
+.product_data li { display:block; width:520px; overflow:hidden;}
+.product_data p { display:block; float:left; padding:10px 0;}
+.product_data .title { width:115px; padding-right:4px; text-align:right; border-right:#fff 1px solid; color:#777;}
+.product_data .data { width:390px; padding-left:10px; color:#333;}
+
+/* 頁碼 */
+.pager { clear:both; width:970px; padding:20px 0; border-top:#aaa 1px solid; text-align:center;}
+.pager a { margin:0 5px; font-size:13px; color:#666;}
+.pager a:hover { color:#003366; text-decoration:underline;}
+.pager a span { font-weight:bold; font-size:15px; color:#003366; text-decoration:underline;}
+
+
+
+/* 關於康森
+============================================*/
+.aboutBox { width:960px; margin:0 0 0 10px; padding:170px 0 20px 0; background:url(../images/company_pic.jpg) no-repeat;}
+.aboutBox p { display:block; padding:0 0 15px 0; font-size:15px; line-height:22px; color:#555;}
+.aboutBox p span { font-size:18px; color:#547296;}
+.aboutBox h3 { display:block; width:945px; margin:20px auto; padding:10px 0 10px 10px; border-left:#547296 5px solid; border-bottom:#333 1px solid; font-size:30px; font-weight:bold; color:#547296; overflow:hidden;}
+.aboutBox h3 span { margin:0 0 0 10px; font-size:40px; color:#82a276;}
+.aboutBox .map { display:block; width:940px; height:450px; padding:9px; border:#999 1px solid;}
+
+
+
+/* 最新消息
+============================================*/
+.newsList { display:block; width:940px; margin:0 auto; padding:0 0 30px 0;}
+.newsList li { display:block; clear:both; width:900px; padding:20px; border-bottom:#ddd 1px solid; overflow:hidden;}
+.newsList li .newsPic { display:block; float:left; position:relative; width:150px; height:100px; margin:0 20px 0 0; overflow:hidden;}
+.newsList li .newsPic img { display:block; position:absolute; top:50%; left:0; width:150px;}
+.newsList li a { display:block; padding:0 0 10px 0; font-size:16px; color:#547296;}
+.newsList li a:hover { color:#255a4d;}
+.newsList li p { font-size:14px; color:#666; line-height:20px;}
+
+.newsMain { display:block; width:900px; margin:0 auto; padding:20px;}
+.newsMain .newsPic { clear:both; height:auto; text-align:center;}
+.newsMain .newsPic img { max-width:900px; max-height:300px;}
+.newsMain h3 { display:block; padding:0 0 10px 0; font-size:18px; color:#547296;}
+.newsMain p { display:block; clear:both; padding:0 0 10px 0; font-size:14px; color:#666; line-height:20px;}
+
+
+
+/* 聯絡我們
+============================================*/
+.contactBox { display:block; width:670px; padding:0 0 0 300px; background:url(../images/contact_img.jpg) no-repeat;}
+.contactBox li { display:block; width:670px; padding:12px 0; border-bottom:#eee 1px solid; font-size:15px; overflow:hidden;}
+.contactBox li span { display:block; float:left; width:150px; padding:5px 20px 0 0; text-align:right;}
+.contactBox li input[type="text"] { width:300px; height:25px; padding:0 10px; line-height:25px; background:#fff; border:#aaa 1px solid; font-family:"微軟正黑體"; font-size:15px; color:#666;}
+.contactBox li select { width:200px; height:25px; padding:2px; background:#fff; border:#aaa 1px solid;}
+.contactBox li textarea { display:block; width:380px; height:180px; padding:0 10px; background:#fff; border:#aaa 1px solid; font-family:"微軟正黑體"; font-size:15px; color:#666; resize:none;}
+.contactBox li a {  display:block; float:right; padding:5px 15px; color:#fff;}
+.contactBox li a:hover { background:#333;}
+.contactBox li .btn_send { margin:0 5px 0 0; background:#099;}
+.contactBox li .btn_cancel { margin:0 97px 0 0; background:#999;}
+
+
+
+/* 線上教學內頁
+============================================*/
+.teaching_main { width:910px; padding:50px 30px 30px 30px; overflow:hidden;}
+.teaching_main h3 { display:block; padding:0 0 10px 11px; font-size:18px; color:#547296;}
+.teaching_textBox { width:888px; padding:0 11px 20px 11px; font-size:14px; color:#666; line-height:19px;}
+
+.teaching_main #video { display:block; clear:both; width:910px; padding:0 0 20px 0; overflow:hidden;}
+.teaching_main #video li { display:block; float:left; margin:0 10px 20px 10px;}
+.teaching_main #video li a { display:block; position:relative; width:160px; height:120px; background:#eee; border:#ddd 1px solid; text-align:center; overflow:hidden;}
+.teaching_main #video li a img { display:block; position:absolute; top:50%; left:50%; max-width:160px; max-height:120px;}
+.teaching_main #video li p { display:block; width:160px; height:40px; padding:5px 0 0 0; font-size:14px; line-height:18px; text-align:center; color:#547296; overflow:hidden;}
+
+.teaching_main #pic { display:block; clear:both; width:910px; padding:0 0 20px 0; overflow:hidden;}
+.teaching_main #pic li { display:block; float:left; margin:0 10px 20px 10px;}
+.teaching_main #pic li a { display:block; position:relative; width:160px; height:120px; background:#eee; border:#ddd 1px solid; text-align:center; overflow:hidden;}
+.teaching_main #pic li a img { display:block; position:absolute; top:50%; left:50%; max-width:160px; max-height:120px;}
+.teaching_main #pic li p { display:block; width:160px; height:40px; padding:5px 0 0 0; font-size:14px; line-height:18px; text-align:center; color:#547296; overflow:hidden;}
+
+.teaching_main #pdf { display:block; clear:both; width:910px; padding:0 0 20px 0; overflow:hidden;}
+.teaching_main #pdf li { display:block; float:left; margin:0 10px 20px 10px;}
+.teaching_main #pdf li a { display:block; position:relative; width:160px; height:120px; background:#eee; border:#ddd 1px solid; text-align:center; overflow:hidden;}
+.teaching_main #pdf li a img { display:block; position:absolute; top:50%; left:50%; max-width:160px; max-height:120px;}
+.teaching_main #pdf li p { display:block; width:160px; height:40px; padding:5px 0 0 0; font-size:14px; line-height:18px; text-align:center; color:#547296; overflow:hidden;}
+
+
+
+/* 加入會員
+============================================*/
+.joinBox { display:block; width:670px; padding:0 0 0 300px; background:url(../images/contact_img.jpg) no-repeat;}
+.joinBox li { display:block; width:670px; padding:12px 0; border-bottom:#eee 1px solid; font-size:15px; overflow:hidden;}
+.joinBox li span { display:block; float:left; width:150px; padding:5px 20px 0 0; text-align:right;}
+.joinBox li b { margin:0 10px 0 0; font-weight:normal;}
+.joinBox li input[type="text"] { width:300px; height:25px; padding:0 10px; line-height:25px; background:#fff; border:#aaa 1px solid; font-family:"微軟正黑體"; font-size:15px; color:#666;}
+.joinBox li select { height:25px; padding:2px; background:#fff; border:#aaa 1px solid;}
+.joinBox li a {  display:block; float:left; padding:5px 15px; color:#fff;}
+.joinBox li a:hover { background:#333;}
+.joinBox li p { display:block; float:left; margin:5px 0 0 215px; font-size:13px; color:#c60;}
+.joinBox li .btn_send { margin:0 5px 0 10px; background:#099;}
+.joinBox li .btn_cancel { margin:0 0 0 0; background:#999;}

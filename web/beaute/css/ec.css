@@ -1,0 +1,138 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+.more{ padding:0 10px; color:#000; font-size:13px;}
+.more a{ color:#000; font-size:13px; margin:0 5px; text-decoration:none;}
+.more a:hover{ text-decoration:underline;}
+
+.hr { border:none; border-top:#e0e0e0 solid 1px;  height:1px; margin:5px 0; xxpadding:0px;}
+
+.morelightAsh{color:#b9b9b9;}
+.morelightAsh a{color:#b9b9b9;text-decoration:underline;}
+.morelightAsh a:hover{color:#b9b9b9;text-decoration:none;}
+
+#breadCrumb{ float:right; font-size:12px; list-style:none;}
+#breadCrumb #link{ overflow:hidden; padding:10px 10px 5px 0; float:right; padding-left:15px; color:#555;line-height:1em;}
+#breadCrumb #link  a{ color:#ed6d00; text-decoration:underline;}
+#breadCrumb #link  a:hover{ color:#c80000; text-decoration:underline;}
+#breadCrumb #link span{ margin:0 0 0 5px; color:#c80000;}
+#breadCrumb #link span  a{ color:#333; text-decoration:none;}
+#breadCrumb #link span  a:hover{ color:#c80000; text-decoration:underline;}
+
+#myBody #menu{ position:absolute; xposition:relative; width:200px;}
+#myBody #data{ position:relative; Xright:0; top:0px; width:754px; float:right;}
+
+#myBody{ display:block; width:980px; position:relative; Xposition:absolute; padding:0 0 20px 0; line-height:20px; overflow:hidden;}
+#myBody div.rr { width:471px; float:right; margin:0; padding:0; overflow:hidden;}
+#myBody div.ll { width:509px; float:left; margin:0; padding:0; overflow:hidden;}
+#myBody .mores a{color: #c80000; text-decoration:none; font-weight:normal;}
+#myBody .mores a:hover{color: #c80000;text-decoration: underline;}
+table.dataTable{font-size:13px; font-family:Arial; color: #000; border-right:#bbbbbb solid 1px;}
+table.dataTable td.line{ height:1px; padding:0; background:#bbbbbb; font-size:1px; line-height:1px;}
+
+.tableTitleBg{font-size:13px; font-family:Arial;color: #000; background:#f5f5f5; text-align:center;font-weight: bold; border-left:#bbbbbb solid 1px; padding:12px;}
+.tableTitleBg a{color: #FFFFFF; text-decoration:none; display:block;}
+.tableTitleBg a{height:45px; padding-top:14px;}
+.tableTitleBg a:hover{color: #cad408;}
+.tableTitleBgR{font-size:13px; font-family:Arial;color: #000; background:#f5f5f5; border-left:#bbbbbb solid 1px; padding:12px 43px ;}
+
+.tableTitleBg2{font-size:13px; font-family:Arial;color:#000; background:#ffffff; border-left:#bbbbbb solid 1px; }
+
+.tableTitleBg3{font-size:12px; font-family: Verdana;color:#000; background:#ffffff; border-left:#bbbbbb solid 1px;  padding:10px; vertical-align:middle; text-align:center;}
+.tableTitleBg3 a{color:#38a6a7;text-decoration:none; font-weight:bold;}
+.tableTitleBg3 a:hover{color: #000;text-decoration:underline}
+.tableTitleBg3 .mores a{color: #c80000;text-decoration:none;}
+.tableTitleBg3 .mores a:hover{color: #c80000;text-decoration: underline;}
+
+.tableTitleBg3R{font-size:12px; font-family: Verdana;color:#000; background:#ffffff;  border-left:#bbbbbb solid 1px;  padding:0 10px 10px 10px;}
+.tableTitleBg3R a{color: #000;text-decoration:underline;}
+.tableTitleBg3R a:hover{color: #000;text-decoration:none;}
+
+.tableTitleBg4{font-size:13px; font-family: Verdana;color: #000; background:#f5f5f5;  border-left:#bbbbbb solid 1px; text-align:center;font-weight: bold; padding:12px;}
+.tableTitleBg4 a{color: #FFFFFF; text-decoration:none; display:block;}
+.tableTitleBg4 a{height:45px; padding-top:14px;}
+.tableTitleBg4 a:hover{color: #cad408;}
+
+.tableTitleBg5{font-size:12px; font-family: Verdana;color:#000; background:#ffffff;  border-left:#bbbbbb solid 1px; padding:20px 0px; text-align:center;}
+.tableTitleBg5 .p{ display:block; margin:0px; _margin: 0px;}
+.tableTitleBg5 .p img{ margin:5px; width:150px; height:150px;}
+
+.tableTitleBg6{font-size:12px; font-family: Verdana;color:#000; background:#ffffff; border-left:#bbbbbb solid 1px;  padding:12px; text-align:center; vertical-align:middle;}
+.tableTitleBg6 a{color: #000; text-decoration:none;}
+.tableTitleBg6 a:hover{color:#000; text-decoration: underline;}
+
+.moreAsh{color:#666;}
+.moreAsh a{color:#666;text-decoration:none;}
+.moreAsh a:hover{color: #333;text-decoration:underline;}
+
+.tableTitleBg7{font-size:12px; font-family: Verdana;color:#000; background:#ffffff; border-left:#bbbbbb solid 1px; padding:10px 12px; text-align:center;}
+	   
+.tableTitleBg8{font-size:12px; font-family: Verdana;color:#000; background:#ffffff; border-left:#bbbbbb solid 1px; padding:20px 12px; text-align:center; vertical-align:middle;}
+	   
+.tableTitleBg9{font-size:12px; font-family: Verdana;color:#000; background:#ffffff; padding:38px 0px; text-align:center;}
+	   
+.tableIcon{font-size:13px; font-family:Arial;color: #ffffff; text-align:center;font-weight: bold; border-left:#bbbbbb solid 1px;}
+.tableIcon a{color: #FFFFFF; text-decoration:none; background:#38a6a7; padding:12px; display:block;}
+.tableIcon  a:hover{ background:#333;color: #ffffff;}
+
+.TEXT_WHITE1 { font-size: 12px; color: #000; margin:15px 0 0 20px; padding:5px 0; line-height:30px;}
+.TEXT_WHITE2 { width:733px; font-size: 12px; color: #000; padding:5px 10px; text-align:right;}
+.TEXT_WHITE1 span{ color:#c80000; text-decoration:underline;}
+.TEXT_WHITE3 { font-size: 12px; color: #666666; margin:15px 0 0 20px; vertical-align:middle;}
+.TEXT_WHITE3 p { padding:0 0 5px 0;}
+.TEXT_WHITE3B { font-size: 15px; color: #990000; margin:15px 0 0 20px; font-weight: bold;}
+.TEXT_WHITE4 { font-size: 12px; color: #000; line-height:1.5em; margin:15px 0 15px 20px;}
+.TEXT_WHITE5 { font-size: 12px;color: #000;line-height:1.5em;margin-top: 15px;margin-right: 0;margin-bottom: 15px;}
+
+.red { font-size: 12px;color: #c80000;left:0;}
+.amount{ font-size: 12px;color: #000;font-weight: bold;}
+
+#myBody #returned{position:relative;Xright:0;top:0px;width:980px;float:right;}
+.shopicon{zoom:1;overflow:hidden;list-style:none;}
+.shopicon .p{float:right;display:block;}
+.shopicon .p img{}
+
+/***************************** page  start ***************************/
+
+#pagemiddle{ position:relative; width:754px; margin:0 auto; padding:10px 0;}
+#pagemiddle #Block{ width:450px; margin:0px auto 0 auto;}
+#pagemiddle #Block .arrow{ line-height:1.8em; margin-right:10px; float:left;}
+#pagemiddle #Block .arrow  a{ color:#666666; text-decoration:none;}
+#pagemiddle #Block .arrow a:hover{ color:#666666; text-decoration:underline;}
+#pagemiddle #Block .arrow2{ line-height:1.8em; margin-left:10px; float:right;}
+#pagemiddle #Block .arrow2  a{ color:#666666; text-decoration:none;}
+#pagemiddle #Block .arrow2 a:hover{ color:#666666; text-decoration:underline;}
+#pagemiddle #Block .link{ line-height:1.8em; font-size:11px; color:#666666; font-weight:bold; margin:5px 5px 0 5px; X float:left; text-align:center}
+#pagemiddle #Block .link .nowPage{ color:#c80000; font-size:12px; font-weight:bold; margin:auto 10px; Xtext-decoration:underline;}
+#pagemiddle #Block .link a{ text-decoration:none; margin:auto 10px; color:#6f6f6f;}
+#pagemiddle #Block .link a:hover{ text-decoration:underline;}
+
+/***************************** page  end *******************************/
+
+/***************************** shop start **************************/
+
+.doll{ float:left; width:490px; background-repeat:no-repeat; background-image:url(../images/shopBbg.png);}
+.doll #res { height:490px;}
+.doll img{ margin:10px 0 0 9px; max-width:473px; max-height::473px;}
+.doll .dolls{ display:block; clear:both; width:490px; padding:0 0 0 2px; zoom:1; overflow:hidden; list-style:none;}
+.doll .dolls .p{ float:left; display:block; margin:10px 0px 0 0px; _margin:10px 0px 0 0px;}
+.doll .dolls .p img{ margin:5px; width:150px; height:150px; border:#eee solid 1px;}
+
+#productCT{ margin:12px 5px 16px 5px; zoom:1; overflow:hidden; color:#666666; font-size:12px; line-height:1.8em;}
+#productCT p { padding:5px 0;}
+#productCT .p{ padding:0; margin:0;}
+#productCT .icon{ zoom:1; overflow:hidden;list-style:none; padding:10px 0;}
+#productCT .icon .p{float:left;display:block;margin:0px 5px;_margin:0px 5px;}
+#productCT .icon.p img{margin:5px;}
+.shop{ width:471px; background-color:#fff; overflow:hidden; list-style:none; margin-top:6px;}
+.shop .p{ display:block; float:right;}
+.shop img{ float:left;}
+#myBody h3{  font-family:"微軟正黑體","Microsoft JhengHei",Arial; font-size:24px; color:#333;padding:0 0 14px 0px;line-height:1.2em;}
+#myBody h3.first{ margin-top:0;}
+#myBody h3 .ps{ font-size:20px; color:#ed6d00;}
+#myBody h3 a{ font-size:12px;color:#c80000;text-decoration:none;}
+#myBody h3 a:hover{ color:#c80000;text-decoration:none;}
+#myBody .more { padding:5px; text-align:right; color:#555;}
+#myBody .more a { color:#555;}
+.ulStyle{ margin-top:10px;color:#666;	}
+.ulStyle li{ background:url(../../images/dot.gif) no-repeat 2px 8px;padding-left:14px;margin-top:2px;line-height:1.6em;color:#666;}

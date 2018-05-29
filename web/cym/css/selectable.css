@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* Selectbox Styles
+=================================*/
+
+a.sctble_display { background: url(../images/select_right.png) no-repeat right top ; width:232px; height:32px; display:block; margin: 0 0 0 80px;}
+a.sctble_display:hover { background-position: right -32px; }
+a.sctble_focus { background-position: right -64px !important }
+a.sctble_display span { background: url(../images/select_left.png) no-repeat left top; line-height: 32px; width:196px; height:32px; display:block; padding: 0 0 0 10px; color:#666666;} 
+a.sctble_display:hover span { background-position: left -32px }
+a.sctble_focus span { background-position: left -64px !important }
+
+/* Pulldown Mat (Basis)
+=================================*/
+
+div.sctble_mat { display:block; clear:both; width:232px;}
+div.sctble_mat dl { }
+div.sctble_mat a { color: #999999; font-weight:normal; line-height:32px;}
+div.sctble_mat a.selected { color: #666;}
+		
+/* Simple Select Box
+=================================*/
+	
+div.sBox { background: #ffffff;  }
+div.sBox p { border: none !important;  line-height:32px;}
+div.sBox a{ width:222px; height:32px; display:block;background:#eeeeee; line-height:32px; padding: 0 0 0 10px;}
+div.sBox a:hover, div.sBox a:focus, div.sBox a.selected { color: #666666; font-weight:normal; line-height:32px; background:#dddddd;}

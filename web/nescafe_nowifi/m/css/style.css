@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* common
+============================================*/
+html, body { width:100%; height:100%; background: #7D0705; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+body { position: relative; font-family:"微軟正黑體"; font-size:12px; color:#333;}
+.wrap { position: relative; background: #000; overflow: hidden;}
+
+.top { position: fixed; top: 0; left: 0; width: 100%; height: 100px; background: #000; z-index: 10;}
+.top a { display: block; position: absolute;}
+.btn_location { top: 37px; left: 28px; padding: 0 0 0 40px; font-size: 30px; font-weight: bold; background: url(../images/icon_location.png) 0 -1px no-repeat; color: #fff; text-decoration:blink;}
+.btn_location.on { text-decoration:none; /*background: url(../images/btn_close_menu.png) 0 0 no-repeat;*/}
+.btn_fb { top: 23px; right: 184px; width: 54px; height: 54px; background: url(../images/icon_menuFb.png) no-repeat;}
+.btn_line { top: 23px; right: 107px; width: 53px; height: 54px; background: url(../images/icon_menuLine.png) no-repeat;}
+.btn_menu { top: 28px; right: 28px; width: 53px; height: 45px; background: url(../images/icon_menu.png) no-repeat;}
+.btn_menu.on { background: url(../images/btn_close_menu.png) center center no-repeat;}
+
+h1 a { display: block; position: absolute; bottom: 1.851%; left: 1.562%; width: 18.697%; height: 2.87%; z-index: 2;}
+h1 a img { max-width: 100%; max-height: 100%;}
+a[href *="updog"]{display:none!important;}
+
+.menu { display: none; position: absolute; top: 100px; left: 0; width: 100%; height: 100%; background: #520b0a; overflow: hidden; z-index: 9;}
+.menu li { display: block; clear: both; width: 100%; height: 170px; border-bottom: #8d120c 1px solid;}
+.menu li a { display: block; width: 100%; padding: 66px 0 66px 60px; font-size: 38px; font-weight: bold; line-height: 38px; color: #ed3d33; box-sizing: border-box;}
+
+.location { display: none; position: absolute; top: 100px; left: 0; width: 100%; height: 100%; padding: 40px 0 0 0; background: #520b0a; overflow: hidden; box-sizing: border-box; z-index: 9;}
+.location p { display: block; width: 100%; padding: 20px 0 20px 60px; font-size: 38px; font-weight: bold; line-height: 38px; color: #ed3d33; box-sizing: border-box;}
+
+.fp-slidesNav li:after { content: ""; display: none; position: absolute; top: -20px; left: 50%; width: 100px; margin: 0 0 0 -50px; font-size: 13px; text-align: center; font-weight: bold; color: #fff;}
+.fp-slidesNav li:nth-child(1):hover:after { content: "首頁"; display: block;}
+.fp-slidesNav li:nth-child(2):hover:after { content: "保證0收訊"; display: block;}
+.fp-slidesNav li:nth-child(3):hover:after { content: "真人咖啡杯座"; display: block;}
+.fp-slidesNav li:nth-child(4):hover:after { content: "朋友真考驗"; display: block;}
+.fp-slidesNav li:nth-child(5):hover:after { content: "免費香醇咖啡"; display: block;}
+
+.bottomPrompt { position: fixed; bottom: 0; left: 0; width: 100%; height: 69px; background: #000 url(../images/bg_indexPrompt.gif) center center no-repeat; z-index: 5;}
+.btn_onload { display: block; position: absolute; bottom: 215px; left: 50%; width: 432px; height: 80px; margin: 0 0 0 -216px; background: url(../images/btn_upload_index.png) no-repeat; z-index: 5;}
+.img_logo { display: block; position: fixed; bottom: 25px; left: 23px; z-index: 8;}
+
+.tagboard { width: 100%; height: 100%; background: #000;}
+
+
+/* lightbox
+============================================*/
+.lightbox { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 999;}
+.lightbox .lightbox_content { position: absolute; top: 50%; left: 50%; background: url(../images/bg_lightbox2.png); border: #fff 2px solid; z-index: 5;}
+.lightbox .lightbox_content .btn_close { display: block; position: fixed; top: 2px; right: 4px; width: 100px; height: 100px; background: url(../images/btn_close_menu.png) center center no-repeat; text-indent: -9999px; z-index: 10;}
+.lightbox .lightbox_content .triangle_r { display: block; position: absolute; top: 0; right: 0; width: 45px; height: 44px; background: url(../images/bg_triangle_r.png) no-repeat; z-index: 2;}
+.lightbox .bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/bg_lightbox2.png); z-index: 1;}
+.lightbox .line { display: none; position: absolute; top: 50%; left: 0; width: 100%; height: 111px; margin: -36px 0 0 0; background: url(../images/bg_line.png) center center no-repeat; z-index: 2;}
+
+/* 登入 */
+#login { display: none;}
+#login .lightbox_content { width: 520px; height: 440px; margin: -220px 0 0 -260px;}
+#login h2 { display: block; position: absolute; top: 68px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#login .login p { display: block; position: absolute; top: 150px; width: 100%; font-size: 24px; text-align: center; color: #fff;}
+#login .login .btn_login_fb { display: block; position: absolute; top: 220px; left: 50%; width: 152px; height: 152px; margin: 0 0 0 -76px; background: url(../images/btn_login_fb.png) no-repeat;}
+#login .login .btn_login_fb:hover { background-position: 0 -152px;}
+
+/* 影片 */
+#video { display: none;}
+#video .lightbox_content { top: 270px; width: 717px; height: 574px; margin: 0 0 0 -359px;}
+#video h2 { display: block; position: absolute; top: -180px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#video h3 { display: block; position: absolute; top: -100px; left: 0; width: 100%; text-align: center; font-size: 39px; color: #fff; z-index: 5;}
+#video iframe { position: absolute; top: 13px; left: 18px;}
+#video .btn_share { display: block; position: absolute; bottom: -110px; left: 50%; width: 526px; height: 80px; margin: 0 0 0 -263px; background: url(../images/btn_share.png) no-repeat; text-indent: -9999px;}
+
+/* 填資料 */
+#userData { display: none;}
+#userData .lightbox_content { top: 270px; width: 710px; height: 650px; margin: 0 0 0 -355px;}
+#userData h2 { display: block; position: absolute; top: -180px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#userData h3 { display: block; position: absolute; top: -100px; left: 0; width: 100%; text-align: center; font-size: 39px; color: #fff; z-index: 5;}
+#userData h4 { display: block; position: absolute; top: 40px; left: 0; width: 100%; text-align: center; font-size: 32px; color: #fff; z-index: 5;}
+#userData ul { display: block; position: absolute; top: 90px; left: 40px; width: 670px; overflow: hidden;}
+#userData ul input { display: inline-block; height: 50px; padding: 5px 10px; border: 0; background: #fff; font-size: 38px; line-height: 50px; font-family: "微軟正黑體";}
+#userData ul select { display: inline-block; height: 60px; padding: 5px 10px; font-size: 38px; background: #fff url(../images/icon_arrow.png) 180px 26px no-repeat; appearance: none; -webkit-appearance: none; -moz-appearance: none; font-family: "微軟正黑體"; border: 0;}
+#userData ul li { display: block; clear: both; margin: 30px 0;}
+#userData ul li span { display: inline-block; width: 130px; font-size: 40px; color: #fff;}
+#userData ul li .name { width: 446px;}
+#userData ul li .tel { width: 446px;}
+#userData ul li #address_select { display: inline-block;}
+#userData ul li .mail { width: 446px;}
+#userData ul li .city { width: 220px; margin-right: 20px;}
+#userData ul li .area { width: 220px;}
+#userData ul li .zipcode { display: none;}
+#userData ul li .address { width: 446px; margin-left: 130px;}
+#userData ul .checkBox { font-size: 30px; line-height: 30px; color: #fff;}
+#userData ul .checkBox .btn_check { display: block; float: left; width: 30px; height: 30px; margin: 0 10px 0 130px; background: url(../images/btn_check.jpg) no-repeat;}
+#userData ul .checkBox .btn_check.on { background-position: 0 -30px;}
+#userData ul .checkBox .btn_rules { text-decoration: underline; color: #fcff21;}
+#userData .btn_send { display: block; position: absolute; bottom: -130px; left: 50%; width: 208px; height: 98px; margin: 0 0 0 -224px; background: url(../images/btn_send.png) no-repeat; text-indent: -9999px;}
+#userData .btn_cancel { display: block; position: absolute; bottom: -130px; left: 50%; width: 208px; height: 98px; margin: 0 0 0 16px; background: url(../images/btn_cancel.png) no-repeat; text-indent: -9999px;}
+
+/* 直播 */
+#live { display: none;}
+#live .lightbox_content { top: 220px; width: 717px; height: 714px; margin: 0 0 0 -359px;}
+#live h2 { display: block; position: absolute; top: -100px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#live .img_live { position: absolute; top: 76px; left: 18px;}
+
+/* 介紹 */
+#flow { display: none;}
+#flow .lightbox_content { top: 130px; width: 700px; height: 990px; margin: 0 0 0 -350px;}
+#flow h2 { display: block; position: absolute; top: -80px; width: 100%; text-align: center; font-size: 58px; font-weight: bold; color: #fff; z-index: 5;}
+#flow h2 img { margin: 0 5px -3px 0;}
+#flow h3 { display: block; position: absolute; top: 25px; width: 100%; font-size: 33px; text-align: center; color: #fff;}
+#flow .flow_content { position: absolute; top: 80px; left: 0; width: 700px; height: 900px; text-align: center; overflow: auto;}
+
+/* 活動辦法 */
+#rules { display: none;}
+#rules .lightbox_content { top: 130px; width: 700px; height: 990px; margin: 0 0 0 -350px;}
+#rules h2 { display: block; position: absolute; top: -80px; width: 100%; text-align: center; font-size: 58px; font-weight: bold; color: #fff; z-index: 5;}
+#rules h2 img { margin: 0 5px -3px 0;}
+#rules h3 { display: block; position: absolute; top: 25px; width: 100%; font-size: 33px; text-align: center; color: #fff;}
+#rules .rules_content { position: absolute; top: 80px; left: 0; width: 700px; height: 900px; text-align: center; overflow: auto;}
+
+/* 得獎名單 */
+#winner { display: none;}
+#winner .lightbox_content { top: 130px; width: 700px; height: 990px; margin: 0 0 0 -350px;}
+#winner h2 { display: block; position: absolute; top: -80px; left: 0; width: 100%; padding: 0 0 0 80px; text-align: center; font-size: 58px; font-weight: bold; color: #fff; box-sizing: border-box; z-index: 5;}
+#winner h2 img { display: block; position: absolute; top: -25px; left: 70px;}
+#winner h3 { display: block; position: absolute; top: 25px; width: 100%; font-size: 33px; text-align: center; color: #fff;}
+#winner .winner_content { position: absolute; top: 50px; left: 0; width: 700px; height: 900px; text-align: center; overflow: auto;}
+
+.loading { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #780604; z-index: 1000;}
+
+.spinner {
+	position: fixed;
+	top: 50%; 
+	left: 0;
+  margin: -25px 0 0 0;
+  width: 100%;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 40px;
+  height: 40px;
+	margin: 0 10px;
+  background-color: #fff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}

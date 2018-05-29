@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* common
+============================================*/
+html, body { width:100%; height:100%; background: #000;}
+body { position: relative; font-family:"微軟正黑體"; font-size:12px; color:#333;}
+
+#fullpage { display: block; position: relative; height: 100%;}
+.location { position: absolute; top: 2.777%; left: 1.562%; width: 16.51%; height: 33.148%; z-index: 2;}
+.location img { max-width: 100%;}
+
+h1 a { display: block; position: absolute; bottom: 1.851%; left: 1.562%; width: 18.697%; height: 2.87%; z-index: 2;}
+h1 a img { max-width: 100%; max-height: 100%;}
+a[href *="updog"]{display:none!important;}
+
+.menu { display: block; position: absolute; top: 2.777%; right: 1.562%; height: 32px; overflow: hidden; z-index: 5;}
+.menu li { display: inline-block; height: 32px; margin: 0 0 0 7px; padding: 0 7px 0 0; border-right: #ccc 1px solid;}
+/*.menu li:last-child { border: 0;}*/
+.menu li a { display: table-cell; height: 32px; font-size: 18px; font-weight: bold; vertical-align: middle; color: #fff;}
+.menu li.btn_menu01 a { padding-left: 37px; background: url(../images/icon_menuCup.png) left center no-repeat;}
+.menu li.btn_menu02 a { padding-left: 37px; background: url(../images/icon_menuVideo.png) left center no-repeat;}
+.menu li.btn_menu03 a { padding-left: 40px; background: url(../images/icon_menuLive.png) left center no-repeat;}
+.menu li.btn_menu05 { border: 0;}
+.menu li.btn_menuFb { width: 32px; height: 32px; padding: 0; background: url(../images/icon_menuFb.png) left center no-repeat; border: 0;}
+.menu li.btn_menuLine { width: 32px; height: 32px; padding: 0; background: url(../images/icon_menuLine.png) left center no-repeat; border: 0;}
+.menu li.btn_menuFb a, .menu li.btn_menuLine a { width: 32px; height: 32px; text-indent: -9999px;}
+
+.slide { display: block; position: relative; height: 100%;}
+.slide.index { background: url(../images/bg_index.jpg) center center no-repeat; background-size: cover;}
+.slide.slide01 { background: url(../images/bg_banner01.jpg) center center no-repeat; background-size: cover;}
+.slide.slide02 { background: url(../images/bg_banner02.jpg) center center no-repeat; background-size: cover;}
+.slide.slide03 { background: url(../images/bg_banner03.jpg) center center no-repeat; background-size: cover;}
+.slide.slide04 { background: url(../images/bg_banner04.jpg) center center no-repeat; background-size: cover;}
+
+.fp-slidesNav li:after { content: ""; display: none; position: absolute; top: -20px; left: 50%; width: 100px; margin: 0 0 0 -50px; font-size: 13px; text-align: center; font-weight: bold; color: #fff;}
+.fp-slidesNav li:nth-child(1):hover:after { content: "首頁"; display: block;}
+.fp-slidesNav li:nth-child(2):hover:after { content: "保證0收訊"; display: block;}
+.fp-slidesNav li:nth-child(3):hover:after { content: "真人咖啡杯座"; display: block;}
+.fp-slidesNav li:nth-child(4):hover:after { content: "朋友真考驗"; display: block;}
+.fp-slidesNav li:nth-child(5):hover:after { content: "免費香醇咖啡"; display: block;}
+
+.indexPrompt { display: block; position: absolute; bottom: 1.851%; right: 1.562%; width: 18.802%; height: 3.518%; background: url(../images/bg_indexPrompt.png) no-repeat; background-size: cover; z-index: 2;}
+.btn_onload { display: block; position: absolute; bottom: 8.148%; left: 50%; width: 18.958%; height: 5.74%; margin: 0 0 0 -9.479%; z-index: 5;}
+.btn_onload:hover { }
+.btn_onload img { max-width: 100%;}
+
+#section2 { /*display: none;*/}
+.tagboard-embed { width: 100%; height: 100%; padding: 70px 0 50px 0; background: #000; box-sizing: border-box;}
+.container-fluid.footer-badge { display: none;}
+h2 { display: block; position: absolute; top: 25px; left: 10px; font-size: 30px; font-weight: bold; color: #fff;}
+h2 span { color: #4db9f1;}
+.btn_onload_tagboard { display: block; position: absolute; top: 10px; right: 25px; z-index: 5;}
+
+@media screen and (max-width: 1200px) {
+	.menu { height: 26px;}
+	.menu li { height: 26px;}
+	.menu li a { height: 26px; font-size: 14px;}
+	.menu li.btn_menu01 a { padding-left: 31px; background-size: 26px auto;}
+	.menu li.btn_menu02 a { padding-left: 31px; background-size: 26px auto;}
+	.menu li.btn_menu03 a { padding-left: 34px; background-size: 29px auto;}
+	.menu li.btn_menuFb { width: 26px; height: 26px; background-size: 26px auto;}
+	.menu li.btn_menuLine { width: 26px; height: 26px; background-size: 26px auto;}
+	.menu li.btn_menuFb a, .menu li.btn_menuLine a { width: 26px; height: 26px;}
+	.fp-controlArrow.fp-prev, .fp-controlArrow.fp-next { width: 30px; height: 53px; margin-top: -26px; background-size: 30px auto;}
+	h2 { top: 34px; font-size: 18px;}
+}
+
+
+/* lightbox
+============================================*/
+.lightbox { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: auto; z-index: 999;}
+.lightbox .lightbox_content { position: absolute; top: 50%; left: 50%; background: url(../images/bg_lightbox2.png); border: #fff 2px solid; z-index: 5;}
+.lightbox .lightbox_content .btn_close { display: block; position: absolute; top: 5px; right: -45px; width: 33px; height: 33px; background: url(../images/btn_close.png) no-repeat; text-indent: -9999px; z-index: 3;}
+.lightbox .lightbox_content .triangle_r { display: block; position: absolute; top: 0; right: 0; width: 45px; height: 44px; background: url(../images/bg_triangle_r.png) no-repeat; z-index: 2;}
+.lightbox .bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/bg_lightbox2.png); z-index: 1;}
+.lightbox .line { position: absolute; top: 50%; left: 0; width: 100%; height: 111px; margin: -36px 0 0 0; background: url(../images/bg_line.png) center center no-repeat; z-index: 2;}
+
+/* 登入 */
+#login { display: none; z-index: 10;}
+#login .lightbox_content { width: 520px; height: 440px; margin: -220px 0 0 -260px;}
+#login h2 { display: block; position: absolute; top: 68px; left: 0; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#login .login p { display: block; position: absolute; top: 150px; width: 100%; font-size: 24px; text-align: center; color: #fff;}
+#login .login .btn_login_fb { display: block; position: absolute; top: 220px; left: 50%; width: 152px; height: 152px; margin: 0 0 0 -76px; background: url(../images/btn_login_fb.png) no-repeat;}
+#login .login .btn_login_fb:hover { background-position: 0 -152px;}
+
+/* 影片 */
+#video { display: none; z-index: 1;}
+#video .lightbox_content { width: 900px; height: 526px; margin: -263px 0 0 -450px;}
+#video h2 { display: block; position: absolute; top: -100px; left: 0; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#video h3 { display: block; position: absolute; top: -30px; left: 0; width: 100%; text-align: center; font-size: 24px; color: #fff; z-index: 5;}
+#video iframe { position: absolute; top: 23px; left: 23px;}
+#video .btn_share { display: block; position: absolute; bottom: -77px; left: 50%; width: 406px; height: 62px; margin: 0 0 0 -203px; background: url(../images/btn_share.png) no-repeat; text-indent: -9999px;}
+
+/* 填資料 */
+#userData { display: none; z-index: 9;}
+#userData .lightbox_content { width: 760px; height: 400px; margin: -200px 0 0 -380px;}
+#userData h2 { display: block; position: absolute; top: -100px; left: 0; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#userData h3 { display: block; position: absolute; top: -30px; left: 0; width: 100%; text-align: center; font-size: 21px; color: #fff; z-index: 5;}
+#userData h4 { display: block; position: absolute; top: 35px; left: 0; width: 100%; text-align: center; font-size: 30px; color: #fff; z-index: 5;}
+#userData ul { display: block; position: absolute; top: 90px; left: 89px; overflow: hidden;}
+#userData ul input { display: inline-block; height: 30px; padding: 5px 10px; border: 0; background: #fff; font-size: 20px; line-height: 30px; font-family: "微軟正黑體";}
+#userData ul select { display: inline-block; height: 40px; font-size: 20px; background: #fff url(../images/icon_arrow.png) 130px 16px no-repeat; appearance: none; -webkit-appearance: none; -moz-appearance: none; font-family: "微軟正黑體"; border: 0;}
+#userData ul li { display: block; float: left; margin: 10px 0;}
+#userData ul li span { display: inline-block; font-size: 24px; color: #fff;}
+#userData ul li .name { width: 157px; margin-right: 40px;}
+#userData ul li .tel { width: 157px;}
+#userData ul li .mail { width: 446px;}
+#userData ul li #address_select { display: inline-block;}
+#userData ul li .city { width: 157px; margin-right: 20px;}
+#userData ul li .area { width: 157px;}
+#userData ul li .zipcode { display: none;}
+#userData ul li .address { width: 446px; margin-left: 72px;}
+#userData ul .checkBox { font-size: 16px; line-height: 20px; color: #fff;}
+#userData ul .checkBox .btn_check { display: block; float: left; width: 19px; height: 19px; margin: 0 5px 0 72px; background: url(../images/btn_check.jpg) no-repeat;}
+#userData ul .checkBox .btn_check.on { background-position: 0 -19px;}
+#userData ul .checkBox .btn_rules { text-decoration: underline; color: #fcff21;}
+#userData .btn_send { display: block; position: absolute; bottom: -77px; left: 50%; width: 132px; height: 62px; margin: 0 0 0 -146px; background: url(../images/btn_send.png) no-repeat; text-indent: -9999px;}
+#userData .btn_cancel { display: block; position: absolute; bottom: -77px; left: 50%; width: 132px; height: 62px; margin: 0 0 0 14px; background: url(../images/btn_cancel.png) no-repeat; text-indent: -9999px;}
+#userData .btn_send:hover, #userData .btn_cancel:hover { background-position: 0 -62px;}
+
+/* 直播 */
+#live { display: none;}
+#live .lightbox_content { width: 900px; height: 526px; margin: -263px 0 0 -450px;}
+#live h2 { display: block; position: absolute; top: -80px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#live .img_live { position: absolute; top: 23px; left: 23px;}
+
+/* 介紹 */
+#flow { display: none;}
+#flow .lightbox_content { width: 1000px; height: 650px; margin: -325px 0 0 -500px;}
+#flow h2 { display: block; position: absolute; top: 20px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#flow h2 img { margin: 0 5px -3px 0;}
+#flow h3 { display: block; position: absolute; top: 100px; width: 100%; font-size: 24px; text-align: center; color: #fff;}
+/*#flow .img_flow { position: absolute; top: 1px; left: 2px;}*/
+#flow .flow_content { position: absolute; top: 135px; left: 0; width: 993px; height: 500px;}
+
+/* 活動辦法 */
+#rules { display: none; z-index: 10;}
+#rules .lightbox_content { width: 1000px; height: 650px; margin: -325px 0 0 -500px;}
+#rules h2 { display: block; position: absolute; top: 20px; width: 100%; text-align: center; font-size: 70px; font-weight: bold; color: #fff; z-index: 5;}
+#rules h2 img { margin: 0 5px -3px 0;}
+#rules h3 { display: block; position: absolute; top: 100px; width: 100%; font-size: 24px; text-align: center; color: #fff;}
+#rules .rules_content { position: absolute; top: 105px; left: 25px; width: 960px; height: 520px;}
+
+/* 得獎名單 */
+#winner { display: none; z-index: 10;}
+#winner .lightbox_content { width: 1000px; height: 650px; margin: -325px 0 0 -500px;}
+#winner h2 { display: block; position: absolute; top: 20px; left: 0; width: 100%; padding: 0 0 0 45px; text-align: center; font-size: 70px; font-weight: bold; color: #fff; box-sizing: border-box; z-index: 5;}
+#winner h2 img { display: block; position: absolute; top: -40px; left: 160px;}
+#winner h3 { display: block; position: absolute; top: 100px; width: 100%; font-size: 24px; text-align: center; color: #fff;}
+#winner .winner_content { position: absolute; top: 105px; left: 25px; width: 960px; height: 520px;}
+

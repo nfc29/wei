@@ -1,0 +1,16 @@
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/fun.js"></script>
+<script>
+	var params = location.href.split("?");
+	if (params.length > 1) {
+		params = "?" + params[params.length - 1];
+	} else {
+		params = '';
+	}
+
+	if (Fun.detectmobile.isMobile) {
+		top.location.href = 'https://event.ad.megais.com/nescafe/nescafe_whitecoffee/' + params;
+	} else {
+		top.location.href = 'https://apps.facebook.com/nescafe_whitecoffee/' + params;
+	}
+</script>

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { width:100%; height:100%; background:#229a99;}
+
+.top { width:100%; height:42px; background:url(../images/top_bg.jpg) repeat-x;}
+.header { position:relative; width:1000px; height:42px; margin:0 auto;}
+h1 a { display:block; position:absolute; top:7px; left:30px;}
+.menu { display:block; position:absolute; top:0; right:30px; overflow:hidden;}
+.menu li { display:block; float:left; height:39px; overflow:hidden;}
+.menu li a { display:block; height:39px; text-indent:-9999px;}
+.menu li .menu01 { width:97px; background:url(../images/menu01.jpg) no-repeat;}
+.menu li .menu02 { width:97px; background:url(../images/menu02.jpg) no-repeat;}
+.menu li .menu03 { width:83px; background:url(../images/menu03.jpg) no-repeat;}
+.menu li .menu01:hover, .menu li .menu02:hover, .menu li .menu03:hover, .menu li .now { background-position:0 -39px;}
+
+.middle { clear:both; width:100%; height:100%; background:#efd12b url(../images/bg.jpg) center top no-repeat;}
+.middle .content { position:relative; width:1000px; margin:0 auto;}
+
+.footer { clear:both; width:1000px; margin:0 auto;}
+
+
+
+.tab { display:block; position:absolute; top:248px; left:210px; overflow:hidden;}
+.tab li { display:block; float:left; height:52px; margin:0 13px 0 0; overflow:hidden;}
+.tab li a { display:block; height:52px; text-indent:-9999px;}
+.tab li .tab01 { width:143px; background:url(../images/tab01.png) no-repeat;}
+.tab li .tab02 { width:186px; background:url(../images/tab02.png) no-repeat;}
+.tab li .tab03 { width:179px; background:url(../images/tab03.png) no-repeat;}
+.tab li .tab01:hover, .tab li .tab02:hover, .tab li .tab03:hover, .tab li .now { background-position:0 -52px;} 
