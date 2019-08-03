@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="ad.size" content="width=300,height=250">
+<script type="text/javascript">var clickTag = "http://www.google.com"; </script>
+<title>CreateJS export from google_300x250</title>
+
+<script src="js/easeljs-0.6.0.min.js"></script>
+<script src="js/tweenjs-0.4.0.min.js"></script>
+<script src="js/movieclip-0.6.0.min.js"></script>
+<script src="js/preloadjs-0.3.0.min.js"></script>
+<script src="js/300x250.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	createjs.MotionGuidePlugin.install();
+
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/cut01_bg.jpg", id:"cut01_bg"},
+		{src:"images/cut02_fog.png", id:"cut02_fog"},
+		{src:"images/cut02_txt.png", id:"cut02_txt"},
+		{src:"images/cut03_fog.png", id:"cut03_fog"},
+		{src:"images/cut03_product.png", id:"cut03_product"},
+		{src:"images/cut03_txt.png", id:"cut03_txt"},
+		{src:"images/cut04_product.png", id:"cut04_product"},
+		{src:"images/cut04_txt1.png", id:"cut04_txt1"},
+		{src:"images/cut04_txt2.png", id:"cut04_txt2"},
+		{src:"images/cut04_txt3.png", id:"cut04_txt3"},
+		{src:"images/logo.png", id:"logo"},
+		{src:"images/window.png", id:"window"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib._300x250();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(18);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4; margin:0;">
+	<a href="javascript:window.open(window.clickTag)">
+	<canvas id="canvas" width="300" height="250" style="background-color:#ffffff"></canvas>
+	</a>
+</body>
+</html>
