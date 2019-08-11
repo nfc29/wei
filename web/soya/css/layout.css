@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-family:"微軟正黑體", Verdana, Geneva, sans-serif;}
+
+
+.Wrapper{ position:relative; display: block; width:100%; height:auto; min-width:1000px; min-height:800px; overflow:hidden;}
+
+#jpreOverlay{ background:#ffcd00;}
+#jpreSlide{  width:400px; height:400px; left:50%;  margin-left:0px; margin-top:-180px; background:url(../images/loading/loading_Logo.gif) 0 0 no-repeat;}
+#jpreLoader{ width:100%; }
+#jprePercentage{ width:200px; margin:0 auto; text-align:center; margin-top:160px; font-weight:bold;}
+
+.loadingArea{ position:fixed; display:block; width:100%; height:100%; left:0; top:0; background:#ffcd00; z-index:10000;}
+.loadingImg{ position:absolute; display:block; width:400px; height:400px; left:50%; top:50%; margin-left:-200px; margin-top:-180px;}
+
+.headerArea{ position:fixed; display:block; width:100%; height:176px; background:url(../images/header/header_Bg.png) top center no-repeat; z-index:9000;}
+.headerArea .menuMain{ position:relative; display:block; width:1000px; height:176px; margin:0 auto;}
+.headerArea .menuMain h1{ position:relative; display:block; width:184px; height:154px; margin-top:12px; margin-left:24px; float:left;}
+.headerArea .menuMain h1 a{ position:absolute; display:block; width:180px; height:122px; background:url(../images/header/header_Logo.png) 0 0 no-repeat; left:2px; top:0; text-indent:-9999px; z-index:90005;}
+.headerArea .menuMain h1 .LogoSlogan{ position:absolute; left:0; bottom:0;}
+.headerArea .menuMain ul{}
+.headerArea .menuMain li{ position:relative; display:block; width:127px; height:100px; margin:0; float:left;}
+.headerArea .menuMain li a{ display:block; width:140px; height:100px; text-indent:-9999px;}
+.headerArea .menuMain li.nav-Brand a{ background:url(../images/header/header_menuAbout.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-Food a{ background:url(../images/header/header_menuFood.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-News a{ background:url(../images/header/header_menuNews.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-Store a{ background:url(../images/header/header_menuStore.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-Contact a{ background:url(../images/header/header_menuContact.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-Shop a{ background:url(../images/header/header_menuShop.png) 0 0 no-repeat;}
+.headerArea .menuMain li.nav-Shop a:hover{ background-position:0 -100px;}
+.headerArea .menuMain li ul.subMenu{ display:none; position:absolute; top:95px; left:-10px; margin:0; width:160px; height:44px;} 
+.headerArea .menuMain li ul.subMenu li{ display:block; float:none; width:160px; height:44px; margin:0; background:url(../images/header/submenuBg.png) no-repeat;}
+.headerArea .menuMain li ul.subMenu li:hover{ background-position:0 -44px;}
+.headerArea .menuMain li ul.subMenu li a{ display:block; width:125px; height:33px; padding:11px 0 0 35px; background:none; text-indent:inherit; text-decoration:none; font-size:15px; font-weight:bold; color:#333;}
+.headerArea .menuMain li ul.subMenu li:hover a{ padding-left:33px; color:#fff;}
+
+
+.subArea{ position:relative; display:block; width:100%; }
+.subMain{ position:relative; display:block; width:1000px; margin:0 auto;}
+.subFooter{ position:absolute; display:block; width:100%; left:0; z-index:1000;}
+.Prax{ position:absolute;}
+
+
+.KvArea{ height:895px; background:url(../images/kv/kv_Bg.jpg) top center no-repeat;}
+.KvArea .subMain{ height:895px; }
+.KvArea .subMain .imgKv{ position:absolute; left:88px; top:190px;}
+.KvArea .subMain .ScrollTip{ position:fixed; left:50%; bottom:25px; margin:0 0 0 -26px; z-index:4000;}
+.KvArea .subMain .KvPraxBear01{ left:47px; top:547px;}
+.KvArea .subMain .KvPraxBear02{ left:840px; top:460px;}
+.KvArea .subMain .KvPraxBear02 .KvNews{ display:block; position:absolute; top:16px; left:-120px; width:127px; height:91px; padding:60px 20px 20px 27px; background:url(../images/kv/kv_newsBg.png) no-repeat;}
+.KvArea .subMain .KvPraxBear02 .KvNews li a { font-family:"微軟正黑體"; font-size:14px; line-height:22px; color:#fff; text-decoration:none;}
+.KvArea .subMain .KvPraxBear02 .KvNews li a:hover { color:#ffda00;}
+.KvArea .subFooter{ height:296px; background:url(../images/kv/kv_Footer.png) top center no-repeat; bottom:-131px;}
+
+
+.BrandArea{ height:883px; background:url(../images/brand/brand_Bg.jpg) top center no-repeat;}
+.BrandArea .subMain{ height:883px; }
+.BrandArea .subMain .btn{ position:absolute; display:block; top:450px; z-index:600;}
+.BrandArea .subMain .btnPrev{ left:10px;}
+.BrandArea .subMain .btnNext{ right:10px;}
+.BrandArea .BrandContant{ position:relative; z-index:500;}
+.BrandArea .BrandContant li{ position:absolute; display:block;}
+.BrandArea .subMain .BrandFood01{ position:absolute; left:-407px; top:767px; z-index:5001;}
+.BrandArea .subFooter{ height:192px; background:url(../images/brand/brand_Footer.png) top center no-repeat; bottom:-192px; z-index:300;}
+.BrandArea .subMain .BrandPraxFood{ right:-459px; top:463px; z-index:5000;}
+
+
+.FoodArea{ height:1100px; background:url(../images/food/food_Bg.jpg) bottom center no-repeat;}
+.FoodArea .subMain{ height:1149px;}
+.FoodArea .subMain .FoodMenu{ position:absolute; display:block; width:987px; height:963px; background:url(../images/brand/brand_mainSecret.png) 0 0 no-repeat; left:6px; top:120px;}
+.FoodArea .subMain a.btn{ position: absolute; display: block; width: 90px; height: 25px; line-height: 25px; text-align: center; color: #fff; font-size: 15px; font-weight: bold; left: 849px; top: 105px; text-decoration: none; background: #fa9300;}
+.FoodArea .subMain a.btn:hover{ background:#fa4c06;}
+.FoodArea .subMain a.btnMenuDownload{ width: 90px; left: 750px; top: 105px;}
+.FoodArea .subMain a.btnOrderDownload{ width: 90px; left: 849px; top: 105px;}
+.FoodArea .subMain a.btnMenuOpen{ position:absolute; display:block; width:892px; height:632px; left:47px; top:145px; }
+.FoodArea .subMain a.btnMenuOpen .menuUpdate{ position:absolute; display:block; width:892px; height:632px;  left:0; top:0; overflow:hidden;}
+.FoodArea .subMain a.btnMenuOpen .openIcon{ position:absolute; display:none; width:892px; height:632px; left:0; top:0; z-index:50;}
+.FoodArea .subMain a.btnMenuOpen .openIcon img{ position:absolute; display:block; left:373px; top:244px; z-index:52;}
+.FoodArea .subMain a.btnMenuOpen .openIcon .openBg{ position:absolute; display:block; width:892px; height:632px; left:0; top:0; background-color:#000000; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20); opacity: 0.2; z-index:51;}
+.FoodArea .subMain a.btnMenuOpen:hover .openIcon{ display:block;}
+.FoodArea .subMain .FoodPraxBear{right:-560px; top:650px;}
+.FoodArea .subMain .FoodPraxDrink{left:-462px; top:370px; z-index:5000;}
+
+
+
+.StoreArea{ height:856px; background:url(../images/store/store_Bg.png) top center no-repeat; margin-top:-78px;}
+.StoreArea .subMain{ height:856px;}
+.StoreArea .subMain .googleMap{ position:absolute; left:63px; top:161px;}
+.StoreArea .subMain .fbLikeBox{ position:absolute; left:342px; top:486px;}
+.StoreArea .subMain a.btnGotop{ position:absolute; display:block; width:132px; height:153px; right:57px; bottom:-55px; background:url(../images/footer/footer_btnTop.png) 0 0 no-repeat; text-indent:-9999px;}
+.StoreArea .subMain .imgTeam { display:block; position:absolute; top:20px;}
+.StoreArea .subMain a.btnGotop:hover{ background-position:0 -153px;}
+.StoreArea .subMain .StorePraxBobo1{ right:-220px; top:78px;}
+.StoreArea .subMain .StorePraxBobo2{ right:-400px; top:206px;}
+.StoreArea .subMain .StorePraxBobo3{ right:-230px; top:349px;}
+.StoreArea .subMain .StorePraxBobo4{ right:-420px; top:524px;}
+.StoreArea .subMain .StorePraxBobo5{ right:-290px; top:696px; z-index:1;}
+
+
+.FooterArea{ height:165px; background: url(../images/footer/footer_Bg.jpg) top center no-repeat;}
+.FooterArea .subMain{ height:165px;}
+.FooterArea .subMain .imgbear{ position:absolute; left:17px; top:-173px;}
