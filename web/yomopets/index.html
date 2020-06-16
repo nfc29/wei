@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="title" content="YOMOpets 寵物誌-悉心紀錄的寵物專屬部落格，豐富你的精采生活！" />
+<meta name="description" content="『YOMOpets寵物誌』是一個專屬於你跟寵物寶貝們的網站，結合豐富資訊、互動、交流、有趣、多元的寵物社群網站" />
+<meta name="keywords" content="寵物,飼育,晶片,YOMOpets" />
+<meta name="author" content="邁格數位有限公司 Megais" />
+<meta name="language" content="zh-TW" />
+<title>YOMOpets 寵物事</title>
+<link rel="shortcut icon" href="http://yam.yomopets.com/news/wp-content/uploads/2012/03/logo.gif" />
+<link rel="image_src" type="image/jpeg" href="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-snc6/c17.14.173.173/s160x160/180713_190056891014941_7523555_n.jpg" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.masonry.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<!--[if lt IE 8]>
+<style type="text/css">
+html,body { width:100%; height:100%; margin:0; overflow:hidden;}
+table.warn { position:absolute; width:100%; height:100%; background:#efefef; z-index:999999;}
+table.warn td { text-align:center; vertical-align:middle;}
+</style>
+<table class="warn">
+	<tr><td><iframe src="ie/ie.html" width="330" height="242" scrolling="no" frameborder="0" allowtransparency="true"></iframe></td></tr>
+</table>
+<![endif]-->
+
+<body id="index">
+
+<div id="top">
+	<ul>
+    	<li><a href="index.html">YOMOpets首頁</a></li>
+        <li><a href="#">寵物事</a></li>
+        <li><a href="#">寵日誌</a></li>
+        <li><a href="#">寵新聞</a></li>
+        <li><a href="#">寵討論</a></li>
+        <li class="login"><a href="#"><img src="images/icon_new.png" class="icon" /><img src="http://graph.facebook.com/1553042695/picture" width="22" height="22" /></a><a href="#">Wei Chang</a><span>│</span><a href="#">登出</a></li>
+    </ul>
+</div>
+<div id="title">
+	<h1><a href="index.html">YOMOpets 寵物事</a></h1>
+	<ul>
+    	<li class="menu01"><input type="radio" id="menu01" name="radio" /><label for="menu01">全部</label></li>
+        <li class="menu02"><input type="radio" id="menu02" name="radio" /><label for="menu02">狗狗</label></li>
+        <li class="menu03"><input type="radio" id="menu03" name="radio" /><label for="menu03">貓貓</label></li>
+        <li class="menu04"><input type="radio" id="menu04" name="radio" /><label for="menu04">其它</label></li>
+    </ul>
+</div>
+
+<div id="menu">
+	<div class="menubox">
+        <div class="place">
+            <p class="title">地點：</p>
+            <div class="all">
+            	<p>搜尋地區</p>
+            	<div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul class="single">
+                    	<li><input type="radio" id="radio1" name="radio" /><label for="radio1">宜蘭</label></li>
+                        <li><input type="radio" id="radio2" name="radio" /><label for="radio2">基隆</label></li>
+                        <li><input type="radio" id="radio3" name="radio" /><label for="radio3">台北</label></li>
+                        <li><input type="radio" id="radio4" name="radio" /><label for="radio4">新北</label></li>
+                        <li><input type="radio" id="radio5" name="radio" /><label for="radio5">桃園</label></li>
+                        <li><input type="radio" id="radio6" name="radio" /><label for="radio6">新竹</label></li>
+                        <li><input type="radio" id="radio7" name="radio" /><label for="radio7">苗栗</label></li>
+                        <li><input type="radio" id="radio8" name="radio" /><label for="radio8">台中</label></li>
+                        <li><input type="radio" id="radio9" name="radio" /><label for="radio9">彰化</label></li>
+                        <li><input type="radio" id="radio10" name="radio" /><label for="radio10">南投</label></li>
+                        <li><input type="radio" id="radio11" name="radio" /><label for="radio11">雲林</label></li>
+                        <li><input type="radio" id="radio12" name="radio" /><label for="radio12">嘉義</label></li>
+                        <li><input type="radio" id="radio13" name="radio" /><label for="radio13">台南</label></li>
+                        <li><input type="radio" id="radio14" name="radio" /><label for="radio14">高雄</label></li>
+                        <li><input type="radio" id="radio15" name="radio" /><label for="radio15">屏東</label></li>
+                        <li><input type="radio" id="radio16" name="radio" /><label for="radio16">花蓮</label></li>
+                        <li><input type="radio" id="radio17" name="radio" /><label for="radio17">台東</label></li>
+                        <li><input type="radio" id="radio18" name="radio" /><label for="radio18">國外</label></li>
+                    </ul>
+                    <a href="#" class="select-all" style="right:20px">全選</a>
+                    <!--<a href="#" class="select-use">套用</a>-->
+                </div>
+            </div>
+            <p class="title">類別：</p>
+            <div class="all">
+            	<p>搜尋類別</p>
+                <div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul class="checklist">
+                    	<li>
+                        	<h2>外出玩樂</h2>
+                            <input type="checkbox" id="check1" name="check" /><label for="check1">寵餐廳</label>
+                            <input type="checkbox" id="check2" name="check" /><label for="check2">寵旅行</label>
+                            <input type="checkbox" id="check3" name="check" /><label for="check3">寵住宿</label>
+                            <input type="checkbox" id="check4" name="check" /><label for="check4">寵聚會</label>
+                        </li>
+                        <li>
+                        	<h2>生活用品</h2>
+                        	<input type="checkbox" id="check5" name="check" /><label for="check5">寵愛吃</label>
+                        	<input type="checkbox" id="check6" name="check" /><label for="check6">寵愛用</label>
+                        	<input type="checkbox" id="check7" name="check" /><label for="check7">寵店家</label>
+                        	<input type="checkbox" id="check8" name="check" /><label for="check8">寵手作</label>
+                        	<input type="checkbox" id="check9" name="check" /><label for="check9">寵試用</label>
+                        </li>
+                        <li>
+                        	<h2>健康美容</h2>
+                        	<input type="checkbox" id="check10" name="check" /><label for="check10">寵醫院</label>
+                        	<input type="checkbox" id="check11" name="check" /><label for="check11">寵美容</label>
+                        	<input type="checkbox" id="check12" name="check" /><label for="check12">寵寄宿</label>
+                        	<input type="checkbox" id="check13" name="check" /><label for="check13">寵健康</label>
+                        </li>
+                        <li class="last">
+                        	<h2>趣聞資訊</h2>
+                        	<input type="checkbox" id="check14" name="check" /><label for="check14">寵趣聞</label>
+                        	<input type="checkbox" id="check15" name="check" /><label for="check15">寵教養</label>
+                        	<input type="checkbox" id="check16" name="check" /><label for="check16">寵快報</label>
+                        </li>
+                    </ul>
+                    <!--<span class="bottom"></span>-->
+                    <a href="#" class="select-all">全選</a>
+                    <a href="#" class="select-use">套用</a>
+                </div>
+            </div>
+            <div class="search">
+                <input name="" type="text" id="tags" />
+                <div class="keyword">
+                	<span class="arrow"></span>
+                    <ul>
+                        <li><a href="#" class="tt">北海巨妖</a></li>
+                        <li><a href="#">九把刀女友</a></li>
+                        <li><a href="#">松坂桃李</a></li>
+                        <li><a href="#">泫雅</a></li>
+                        <li><a href="#">邵庭</a></li>
+                        <li><a href="#">水果過敏</a></li>
+                        <li><a href="#" class="tt">北海巨妖</a></li>
+                        <li><a href="#">九把刀女友</a></li>
+                        <li><a href="#">松坂桃李</a></li>
+                        <li><a href="#">泫雅</a></li>
+                        <li><a href="#">邵庭</a></li>
+                        <li><a href="#">水果過敏</a></li>
+                        <li><a href="#" class="tt">北海巨妖</a></li>
+                        <li><a href="#">九把刀女友</a></li>
+                        <li><a href="#">松坂桃李</a></li>
+                        <li><a href="#">泫雅</a></li>
+                        <li><a href="#">邵庭</a></li>
+                        <li><a href="#">水果過敏</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="bt">Search</a>
+            </div>
+            <div class="news">
+            	<p>熱門推薦：</p>
+            	<ul>
+            		<li><a href="main.html">樂樂第一次的外宿生活-miya甜蜜貓旅店樂樂第一次的外宿生活-miya甜蜜貓旅店</a></li>
+                    <li><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></li>
+                    <li><a href="main.html">樂樂第一次的外宿生活-miya甜蜜貓旅店</a></li>
+                    <li><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></li>
+                    <li><a href="main.html">樂樂第一次的外宿生活-miya甜蜜貓旅店</a></li>
+                </ul>
+            </div>
+            <div class="news_bg"></div>
+        </div>
+        <!--
+        <div class="select">
+            <div class="one">
+            	<p>外出玩樂</p>
+            	<div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul>
+                        <li><a href="#">寵餐廳</a></li>
+                        <li><a href="#">寵旅行</a></li>
+                        <li><a href="#">寵住宿</a></li>
+                        <li><a href="#">寵聚會</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one">
+            	<p>生活用品</p>
+                <div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul>
+                        <li><a href="#">寵愛吃</a></li>
+                        <li><a href="#">寵愛用</a></li>
+                        <li><a href="#">寵店家</a></li>
+                        <li><a href="#">寵手作</a></li>
+                        <li><a href="#">寵試用</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one">
+            	<p>健康美容</p>
+                <div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul>
+                        <li><a href="#">寵醫院</a></li>
+                        <li><a href="#">寵美容</a></li>
+                        <li><a href="#">寵寄宿</a></li>
+                        <li><a href="#">寵健康</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="one">
+            	<p>趣聞資訊</p>
+                <div class="menu_list">
+                	<span class="arrow"></span>
+                	<ul>
+                        <li><a href="#">寵趣聞</a></li>
+                        <li><a href="#">寵教養</a></li>
+                        <li><a href="#">寵快報</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+</div>
+<!--
+<div class="search_results">
+    <h3>搜尋結果：<span>寵餐廳</span>，共<span>30</span>筆</h3>
+</div>
+-->
+<div class="search_results">
+    <h3>搜尋結果：<span>抱歉～目前無任何符合條件的資料</span><a href="index.html">回首頁</a></h3>
+</div>
+
+<div id="content_box">
+
+<a href="#" class="time now" />依時間排序</a>
+<a href="#" class="fraction" />依人氣排序</a>
+
+<a href="#" class="right">下一則</a>
+<div class="nextbox">
+    <p>999 / 999</p>
+    <span class="arrow"></span>
+</div>
+<a href="#" class="left">上一則</a>
+<div class="prevbox">
+    <p>999 / 999</p>
+    <span class="arrow"></span>
+</div>
+
+<div id="content">
+    <div class="message_box">
+    	<p class="share"><a href="#">快來分享有關寵物的新鮮事</a></p>
+        <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FYOMOpets.club&amp;send=false&amp;layout=standard&amp;width=190&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;" scrolling="no" frameborder="0" allowTransparency="true" class="left_fb"></iframe>
+        <ul>
+        	<li class="title">最新留言</li>
+            <li class="message">
+            	<a href="#"><img src="http://graph.facebook.com/1553042695/picture" width="40" height="40" /></a>
+            	<h3><a href="#">桌面要完全淨空！眾貓</a></h3>
+                <p>這個地方真的非常棒，二樓的「兒童探索空間」...這個地方真的非常棒，二樓的「兒童探索空間」...</p>
+            </li>
+            <li class="message">
+            	<a href="#"><img src="http://graph.facebook.com/1553042695/picture" width="40" height="40" /></a>
+            	<h3><a href="#">桌面要完全淨空！眾貓桌面要完全淨空！眾貓</a></h3>
+                <p>這個地方真的非常棒，二樓的「兒童探索空間」...這個地方真的非常棒，二樓的「兒童探索空間」...</p>
+            </li>
+            <li class="message">
+            	<a href="#"><img src="http://graph.facebook.com/1553042695/picture" width="40" height="40" /></a>
+            	<h3><a href="#">桌面要完全淨空！眾貓</a></h3>
+                <p>這個地方真的非常棒，二樓的「兒童探索空間」...</p>
+            </li>
+            <li class="message">
+            	<a href="#"><img src="http://graph.facebook.com/1553042695/picture" width="40" height="40" /></a>
+            	<h3><a href="#">桌面要完全淨空！眾貓</a></h3>
+                <p>這個地方真的非常棒，二樓的「兒童探索空間」...</p>
+            </li>
+            <li class="message">
+            	<a href="#"><img src="http://graph.facebook.com/1553042695/picture" width="40" height="40" /></a>
+            	<h3><a href="#">桌面要完全淨空！眾貓</a></h3>
+                <p>這個地方真的非常棒，二樓的「兒童探索空間」...</p>
+            </li>
+        </ul>
+        <a href="#" class="more">&gt; 看更多留言</a>
+    </div>
+    
+    <div class="box_big">
+    	<h3><a href="main.html">樂樂第一次的外宿生活-miya甜蜜貓旅店</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:40px;">總得分</span></div>
+		<a href="main.html" class="abgne-zoom-out"><span class="mask"><img src="images/p01.jpg" width="270" height="270" class="pic" /></span></a>
+		<p>自八月的小琉球之旅後,這個月喵喵跟夯先生又安排了趟兩天一夜的台南美食之旅!!</p>
+        <p>那樂樂怎麼辦呢??</p>
+        <p>以前,就有考慮過出遠門他的住宿問題!!想說身邊養貓的朋友滿多的,可以代為照顧~但真的面對到這個問題時,又有諸多擔心!!擔心他跟朋友的貓不合,總不能叫朋友24小時幫你顧著貓~我們更是從來沒想過住宿在獸醫院OR寵物店!!!畢竟他要被關在一個小小的籠子裡,又有狗阿..等~而且獸醫院OR寵物店本來就是一些傳染病的大本營!!! 非必要就不要去囉~</p>
+        <p>剛好之前在網路上看見人家介紹"miya-甜蜜貓旅店"這是一間for貓咪的專門旅店!! 當時覺得很新奇,想不到現在派上了用場… </p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p03.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:32px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+    <div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+		<p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+	<div class="box">
+    	<h3><a href="main.html">[K週刊旅遊版]鹽寮海濱公園海狗現身</a></h3>
+        <span class="place">台北</span>
+        <span class="sort">健康美容</span>
+        <div class="starbox"><span style="width:16px;">總得分</span></div>
+    	<a href="main.html" class="abgne-zoom-out"><img src="images/p02.jpg" width="190" height="190" /></a>
+		<p>鹽寮海濱公園位於台灣東北角</p>
+        <p>佔地80公頃，並擁有3公里的金黃色沙灘入口為仿古的閩南式燕尾大脊古厝造型建築...</p>
+        <ul class="box_bottom">
+        	<li class="like">9999</li>
+            <li class="message">9999</li>
+            <li><a href="main.html" class="more">&gt; 更多資訊</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="page-navigation">
+	<div class="wp-pagenavi">
+		<span class="pages">第 1 頁，共 22 頁</span>
+        <span class="current">1</span>
+        <a href="#" class="page larger">2</a>
+        <a href="#" class="page larger">3</a>
+        <a href="#" class="page larger">4</a>
+        <a href="#" class="page larger">5</a>
+        <span class="extend">...</span>
+        <a href="#" class="larger page">10</a>
+        <a href="#" class="larger page">20</a>
+        <a href="#" class="larger page">30</a>
+        <a href="#" class="larger page">40</a>
+        <span class="extend">...</span>
+        <a href="#" class="nextpostslink">»</a>
+        <a href="#" class="last">最舊»</a>
+	</div>			
+</div>
+
+<div id="footer">
+	<div>
+    	<ul>
+    		<li><a href="#">關於我們</a></li>
+            <li><a href="#">聯絡我們</a></li>
+            <li><a href="#">網友留言</a></li>
+            <li class="last"><a href="share_step1.html">我要分享</a></li>
+        </ul>
+        <p>© 2012 YOMOpets. All Rights Reserved.  服務條款 & 隱私權政策</p>
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FYOMOpets.club%3Ffref%3Dts&amp;width=480&amp;height=170&amp;colorscheme=light&amp;show_faces=true&amp;border_color=%23dddddd&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" style="border-bottom:#999 1px solid; overflow:hidden; width:480px; height:154px;" allowTransparency="true" class="footer_fb"></iframe>
+    </div>
+</div>
+
+</body>
+</html>

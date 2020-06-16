@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<TotalPage>25</TotalPage>
+	<List>
+		<id>1</id>
+		<cTitle>內容標題1</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>2</id>
+		<cTitle>內容標題2</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>3</id>
+		<cTitle>內容標題3</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>4</id>
+		<cTitle>內容標題4</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>5</id>
+		<cTitle>內容標題5</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>6</id>
+		<cTitle>內容標題6</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>7</id>
+		<cTitle>內容標題7</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+	<List>
+		<id>8</id>
+		<cTitle>內容標題8</cTitle>
+		<Text>留言訊息</Text>
+		<DateTime>2012-10-02 16:48</DateTime>
+		<Photo>images/p02.jpg</Photo>
+	</List>
+</data>
