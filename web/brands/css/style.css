@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* common
+============================================*/
+body { background: #003227;}
+* { margin: 0; padding: 0; list-style: none; box-sizing: border-box; }
+sup { vertical-align:super; font-size: 75%; line-height: 10px;}
+
+#box { margin:0px auto; max-width:920px; background: #f8f8f8; color:black; padding:10px; background:white \9; filter:alpha(opacity=30) \9; background-color: rgba(255, 255, 255, .3);}
+#wrap { position: relative; width: 900px; margin: auto; font-family: "微軟正黑體", "Microsoft JhengHei"; font-size: 16px; overflow: hidden;}
+#wrap img { width: 100%;}
+#wrap .img_pc { display: block;}
+#wrap .img_m { display: none;}
+#wrap .media iframe { width: 100%; height: 100%;} 
+
+/* tvc
+============================================*/
+#wrap .tvc1, #wrap .ec_shop, #wrap .jolin_voice, #wrap .suitable, #wrap .gifts, #wrap .faq { position: relative; width: 100%;}
+#wrap .tvc1 .media { position: absolute; top: 16.91%; left: 5.55%; width: 88.88%; height: 77.94%; box-shadow: 0 0 12px 2px rgba(13, 39, 28, 0.75);}
+
+/* ec購物
+============================================*/
+#wrap .ec_shop a { position: absolute; top: 3.24%; height: 72.72%;}
+#wrap .ec_shop .brandsLink { left: 31.33%; width: 14.66%;}
+#wrap .ec_shop .pchomeLink { left: 46%; width: 15.88%;}
+#wrap .ec_shop .momoLink { left: 61.88%; width: 16.55%;}
+#wrap .ec_shop .yahooLink { left: 78.44%; width: 17.22%;}
+
+/* jolin心聲
+============================================*/
+#wrap .txt { position: absolute; line-height: 30px; font-weight: bold; color: #fff;}
+#wrap .jolin_voice .jolin_txt { top: 11.39%; left: 35.55%; width: 61.11%;}
+#wrap .jolin_voice .jolin_sign { top: 32.4%; right: 5.33%; font-size: 14px;}
+#wrap .jolin_voice .t1 { top: 44.3%; left: 37.22%;}
+#wrap .jolin_voice .t2 { top: 56.98%; left: 39.77%;}
+#wrap .jolin_voice .t3 { top: 81.56%; left: 37.22%;}
+#wrap .jolin_voice .t3 b { margin-left: 23px;}
+#wrap .jolin_voice .t3 span { display: block; font-size: 12px; line-height: 16px;}
+
+/* 適合族群
+============================================*/
+#wrap .suitable .media { position: absolute; top: 12.39%; left: 7.88%; width: 84.33%; height: 24.05%; box-shadow: 0 0 12px 2px rgba(13, 39, 28, 0.75);}
+#wrap .suitable .txt { color: #333; line-height: inherit;}
+#wrap .suitable .s1 { top: 57.69%; left: 11.11%;}
+#wrap .suitable .s2 { top: 57.69%; left: 48.44%;}
+#wrap .suitable .s3 { top: 73.12%; left: 11.11%;}
+#wrap .suitable .s4 { top: 73.12%; left: 37.77%;}
+#wrap .suitable .s5 { top: 73.12%; left: 64.22%; width: 25%;}
+#wrap .suitable .ptStyle { width: 14%; font-size: 13px; line-height: 15px; text-align: center;}
+#wrap .suitable .ptStyle b { display: block; padding: 0 0 7px 0; font-size: 20px; color: #0e8151;}
+#wrap .suitable .ptStyle b span { display: block; margin-top: 4px; font-size: 12px;}
+#wrap .suitable .pt1 { top: 91.83%; left: 11.11%;}
+#wrap .suitable .pt2 { top: 91.83%; left: 28%;}
+#wrap .suitable .pt3 { top: 91.83%; left: 44.22%;}
+#wrap .suitable .pt4 { top: 91.83%; left: 61.33%;}
+#wrap .suitable .pt5 { top: 91.83%; left: 76.66%;}
+
+/* 送禮
+============================================*/
+#wrap .gifts p { line-height: 25px;}
+#wrap .gifts .g1 { top: 36.9%; left: 22.77%;}
+#wrap .gifts .g2 { top: 54.15%; left: 26.88%;}
+#wrap .gifts .g3 { top: 70.97%; left: 22.77%;}
+#wrap .gifts .g4 { top: 88.11%; left: 26.88%;}
+
+/* Q&A
+============================================*/
+#wrap .faq p { width: 79.55%; line-height: 24px; word-break: normal; text-align: justify;}
+#wrap .faq p span { display: block; font-size: 13px;}
+#wrap .faq p mark { background: none; color: #fefc61; text-decoration: underline;}
+#wrap .faq .a1 { top: 12.05%; left: 16.22%;}
+#wrap .faq .a2 { top: 21.22%; left: 16.22%;}
+#wrap .faq .a3 { top: 32.37%; left: 16.22%;}
+#wrap .faq .a4 { top: 38.9%; left: 16.22%;}
+#wrap .faq .a5 { top: 48.78%; left: 16.22%;}
+#wrap .faq .a6 { top: 56.73%; left: 16.22%;}
+#wrap .faq .a7 { top: 67.12%; left: 16.22%;}
+#wrap .faq .a8 { top: 77.35%; left: 16.22%;}
+#wrap .faq .a9 { top: 87.48%; left: 16.22%;}
+#wrap .faq .a10 { top: 95.08%; left: 16.22%;}
+
+
+/* mobile
+============================================*/
+@media (max-width: 900px){
+    #wrap { width: 100%; font-size: 14px; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; text-size-adjust: none;}
+    #wrap .txt, #wrap b { font-weight: normal;}
+    #wrap .txt { line-height: 25px;}
+    #wrap .jolin_voice .t2 { line-height: 26px;}
+    #wrap .suitable .ptStyle { line-height: 13px;}
+    #wrap .suitable .ptStyle b { font-size: 16px;}
+    #wrap .gifts p { line-height: 20px;}
+    #wrap .faq p { line-height: 22px;}
+}
+
+@media (max-width: 780px){ 
+    #wrap { font-size: 12px;}
+    #wrap .img_pc { display: none;}
+    #wrap .img_m { display: block;}
+    /*#wrap .jolin_voice p, */#wrap .suitable p, #wrap .gifts p/*, #wrap .faq p*/ { display: none;}
+    #wrap .tvc1 .media { top: 19.7%; width: 88.97%; height: 75.13%;}
+    #wrap .suitable .media { top: 9.53%; width: 84.35%; height: 16.44%;}
+    #wrap .jolin_voice { background: #003628 url(../images/img_voice_m.jpg) right top no-repeat; background-size: contain;}
+    #wrap .jolin_voice .txt { position: static; width: 92%; margin: 0 auto; font-size: 3vw; line-height: 4.5vw;}
+    #wrap .jolin_voice .jolin_txt { padding-bottom: 2vw; background: url(../images/img_jolin.png) -2vw top no-repeat; background-size: 40%; text-align: justify; border-bottom: #5fc1a7 1px solid; overflow: hidden;}
+    #wrap .jolin_voice .jolin_txt p { float: right; width: 60%;}
+    #wrap .jolin_voice .jolin_txt span { display: block; margin-top: 1vw; text-align: right;}
+    #wrap .jolin_voice .t1, #wrap .jolin_voice .t2, #wrap .jolin_voice .t3 { margin: 4vw auto;}
+    #wrap .jolin_voice .t3 { margin: 4vw auto 0 auto; padding-bottom: 4vw;}
+    #wrap .jolin_voice .t1 p, #wrap .jolin_voice .t2 p, #wrap .jolin_voice .t3 p { width: 100%; padding-left: 2vw;}
+    #wrap .jolin_voice .t2 p { padding-bottom: 2vw;}
+    #wrap .jolin_voice .icon { width: auto; height: 3vw; margin-bottom: -0.5vw;}
+    #wrap .jolin_voice .t1 .title { display: block; width: 37.69%; padding-bottom: 1vw;}
+    #wrap .jolin_voice .t2 .title { display: block; width: 58.88%; padding-bottom: 1vw;}
+    #wrap .jolin_voice .t3 .title { display: block; width: 60.27%; padding-bottom: 1vw;}
+    #wrap .jolin_voice .t3 span { margin-top: 2vw; font-size: 2.3vw; line-height: inherit;}
+    #wrap .jolin_voice .jolin { position: absolute; bottom: 0; right: 0; width: 40%;}
+    #wrap .faq { padding-bottom: 3vw; background: #003628 url(../images/img_faq_bg.jpg) center bottom repeat-x;}
+    #wrap .faq div { width: 95%; margin: 0 auto;}
+    #wrap .faq .qa { float: right; width: 85.12%; padding: 3vw 1vw 3vw 0;}
+    #wrap .faq .txt { position: static; width: 100%; font-size: 3vw; line-height: 4.5vw; word-break: normal; text-align: justify;}
+    #wrap .faq .question { color: #fefc61;}
+    #wrap .faq .child { background: url(../images/img_faq_icon1.jpg) left top no-repeat; background-size: 14.88%; border-bottom: #0a7458 1px dotted; overflow: hidden;}
+    #wrap .faq .father { background: url(../images/img_faq_icon2.jpg) left top no-repeat; background-size: 14.88%; border-bottom: #0a7458 1px dotted; overflow: hidden;}
+    #wrap .faq .mother { background: url(../images/img_faq_icon3.jpg) left top no-repeat; background-size: 14.88%; border-bottom: #0a7458 1px dotted; overflow: hidden;}
+    #wrap .faq .pregnant { background: url(../images/img_faq_icon4.jpg) left top no-repeat; background-size: 14.88%; border-bottom: #0a7458 1px dotted; overflow: hidden;}
+    #wrap .faq .elder { background: url(../images/img_faq_icon5.jpg) left top no-repeat; background-size: 14.88%; overflow: hidden;}
+}
+
+@media (max-width: 480px){ 
+    #wrap .jolin_voice .jolin_txt { line-height: 5vw;}
+    #wrap .jolin_voice .jolin { position: absolute; bottom: 0; right: 0; width: 45%;}
+}
+
+@media (max-width: 320px){
+    #wrap .jolin_voice .jolin_txt p { width: 62%;}
+}

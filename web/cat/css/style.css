@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* common
+============================================*/
+html, body { width:100%; height:100%; }
+body { position: relative; background: url(../images/bg.jpg) center top; background-attachment: fixed; background-size: 320px auto; font-family: "微軟正黑體"; font-size: 14px; color: #333; line-height: 18px;}
+img { max-width: 100%;}
+.clear { clear: both;}
+.wrap { position:relative; width: 100%; max-width: 1000px; height: auto; min-height: 100%; margin: 0 auto; overflow: hidden;}
+.headerBox { position: relative; width: 100%; height: auto; margin: 0 0 20px 0; box-sizing: border-box; z-index: 3;}
+.headerBox .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #fff;}
+#index .headerBox .bg { opacity: 0.7;}
+#main .headerBox .bg { opacity: 0.5;}
+.footer { position: relative; clear: both; max-width:1000px; margin: 0 auto;}
+.footer a { display: block; position: absolute;}
+.footer .phone { bottom: 0; left: 0; width: 100%; height: 48.85%;}
+.footer .link_faq { top: 10.91%; left: 33.6%; width: 24%; height: 34.48%;}
+.footer .link_internetService { top: 10.91%; right: 7.9%; width: 24%; height: 34.48%;}
+
+.loading { display: block; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #007f88 url(../images/loading.jpg) center center no-repeat; overflow: hidden; z-index: 10;}
+
+
+/* index
+============================================*/
+.headerBox .header { position: relative; max-width: 1000px; margin: 0 auto; padding: 0 10px; overflow: hidden; box-sizing: border-box; z-index: 2;}
+.headerBox .header .logo { position: relative; float: left; width: 20%; z-index: 2;}
+.headerBox .header .webTitle { position: relative; float: left; width: 80%; text-align: right; z-index: 2;}
+
+.menu { position: relative; max-width: 1000px; margin: 0 auto; padding: 0 10px; overflow: hidden;}
+.menu .mainMenu { padding: 0 0 25px 0;}
+.menu .mainMenu ul { display: none; width: 100%; height: auto;}
+.menu .mainMenu ul li { display: block; width: 100%; border-bottom: #319e97 1px dashed;}
+.menu .mainMenu ul li:last-child { border: none;}
+
+
+/* main_common
+============================================*/
+#main .headerBox { position: fixed; top: 0; left: 0; margin: 0;}
+.btn_home { display: block; position: absolute; top: 0; right: 0; width: 12.8%; background: url(../images/bg_home.png); overflow: hidden; z-index: 3;}
+.btn_top { display: none; position: fixed; bottom: 15px; right: 0; width: 13.7%; max-width: 137px; z-index: 5;}
+.main_content { position: relative; padding: 0 0 30px 0;}
+.main_content .content { position: relative;}
+.main_title { position: relative;}
+.anchor { position: absolute; left: 0;}
+
+
+/* about
+============================================*/
+.about_userBox { display: block; position: relative; max-width: 1000px; margin: 0 auto; padding: 0 10px 20px 10px; box-sizing: border-box;}
+.about_userBox li { display: block; max-width: 100%; padding: 20px 0; border-bottom: #000 1px dashed;}
+.about_userBox li:last-child { padding: 20px 0 0 0; border: none;}
+.about_userBox li .photo { float: left; width: 30%;}
+.about_userBox li .text { float: left; width: 70%; padding: 0 0 0 20px; box-sizing: border-box;}
+.about_userBox li .text h6 { display: table; margin: 0 0 1em 0; padding: 0 0 5px 0; font-size: 2em; font-weight: bold; line-height: 1.2em; color: #008982; border-bottom: #3a3a38 2px solid;}
+.about_userBox li .text p { padding: 0 0 10px 0; font-size: 1.5em; line-height: 1.5em; color: #008982;}
+.about_userBox li .text p:last-child { padding: 0;}
+.pager { width: 100%; text-align: center; padding: 1em 0 2em 0;}
+.pager a { margin: 0 0.4em; font-size: 2em; line-height: 1.2em; color: #008982;}
+.pager a.on { font-weight: bold; border-bottom: #008982 1px solid;}
+
+
+/* send
+============================================*/
+.send_linkBox { max-width: 1000px; margin: 0 auto; background: url(../images/send_content_01_bg.png) center top no-repeat; background-size: cover;}
+.send_linkBox img { float: left; width: 50%;}
+
+
+/* deliver
+============================================*/
+.deliver_link01 { display: block; position: absolute; bottom: 2.03%;; left: 44.4%; width: 27.6%; height: 0.99%;}
+.deliver_link02 { display: block; position: absolute; bottom: 0.7%;; left: 68.2%; width: 19.2%; height: 0.96%;}
+.deliver_link03 { display: block; position: absolute; top: 8.85%;; left: 65.8%; width: 27.6%; height: 0.99%;}
+
+
+/* special
+============================================*/
+.special_tab01 { display: block; position: absolute; bottom: 7.67%; left: 10.5%; width: 16.2%; height: 27.64%;}
+.special_tab02 { display: block; position: absolute; bottom: 7.67%; left: 31.2%; width: 16.2%; height: 27.64%;}
+.special_tab03 { display: block; position: absolute; bottom: 7.67%; left: 51.8%; width: 16.2%; height: 27.64%;}
+.special_tab04 { display: block; position: absolute; bottom: 7.67%; left: 72.5%; width: 16.2%; height: 27.64%;}
+
+
+/* 平板-橫
+============================================*/
+@media (max-width: 1000px) {
+    .about_userBox li .text h6 { font-size: 2em;}
+    .about_userBox li .text p { font-size: 1.5em;}
+    .pager a { font-size: 2em;}
+}
+
+/* 手機-橫
+============================================*/
+@media (min-width: 481px) and (max-width: 767px) {
+    .about_userBox li .text h6 { font-size: 1.4em;}
+    .about_userBox li .text p { font-size: 1.2em;}
+    .pager a { font-size: 1.4em;}
+}
+
+/* 手機-直
+============================================*/
+@media (max-width: 480px) {
+    .about_userBox li .text h6 { font-size: 1.2em;}
+    .about_userBox li .text p { font-size: 1em;}
+    .pager a { margin: 0 0.3em; font-size: 1.2em;}
+}
