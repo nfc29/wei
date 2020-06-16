@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.iebox { background:#fff; width:300px; margin:0 auto; padding:10px; background:url(../images/bg.jpg) left top no-repeat; overflow:hidden;}
+div.iebox img.warning { display:block; width:53px; padding:0 0 5px 0; margin:0 auto;}
+div.iebox h2 { display:block; clear:both; width:275px; padding:1px 10px 1px 15px; font-size:16px; color:#333;}
+div.iebox p { display:block; width:275px; padding:5px 10px 5px 15px; font-size:12px; color:#666;}
+div.iebox ul { display:block; clear:both; width:300px; margin:10px 0 0 0; overflow:hidden;}
+div.iebox ul li { display:block; float:left; width:75px; text-align:center;}
