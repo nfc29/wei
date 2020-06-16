@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<title>IE瀏覽器版本提示</title>
+<script>
+$(document).ready(function () {
+    $("body").queryLoaderHack({
+        backgroundColor: "#060f22",   //預載的背景顏色   預設黑色
+        percentage: true,			//是否顯示百分比  預設關閉
+        percentageTop: "-25px",		//百分比位置  預設0
+        percentageLeft: "10px",		//百分比位置  預設0
+        percentageTextAlign: "center",    //百分比文字對齊方式  預設center
+        percentageFontSize: "21px",		//百分比文字大小  預設2em
+        percentageColor: "#FFF",    //百分比文字顏色(代碼)  預設白色
+		percentageFontFamily: 'Fjalla One',     //百分比數字字型
+        progressbg: "images/progressbg.jpg",  //進度表背景
+        progressbar:  "images/progressbar.jpg",  //進度條圖案
+        progressbarTop : "0px",   //進度條位置
+        progressbarLeft : "0px", 	//進度條位置
+        //completeAnimation: "grow"
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div class="iebox">
+    <img src="images/warning.jpg" class="warning" />
+    <h2>您的瀏覽器由於版本問題，可能會造成網頁無法正常顯示！</h2>
+    <p>為解決此問題，請由下方下載新版瀏覽器</p>
+    <ul>
+        <li><a href='http://www.firefox.com' target='_blank'><img src="images/firefox.jpg"/></a></li>
+        <li><a href='http://www.browserforthebetter.com/download.html' target='_blank'><img src="images/ie8.jpg"/></a></li>
+        <li><a href='http://www.apple.com/safari/download/' target='_blank'><img src="images/safari.jpg"/></a></li>
+        <li><a href='http://www.google.com/chrome' target='_blank'><img src="images/chrome.jpg"/></a></li>
+    </ul>
+</div>
+        
+</body>
+</html>
