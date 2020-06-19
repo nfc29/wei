@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="ad.size" content="width=160,height=600">
+<script type="text/javascript">var clickTag = "http://www.google.com"; </script>
+<title>CreateJS export from google_160x600</title>
+
+<style>
+	canvas { position: absolute; top:0; left: 0; bottom: 0; right: 0; margin: auto;}
+</style>
+
+<script src="js/easeljs-0.6.0.min.js"></script>
+<script src="js/tweenjs-0.4.0.min.js"></script>
+<script src="js/movieclip-0.6.0.min.js"></script>
+<script src="js/preloadjs-0.3.0.min.js"></script>
+<script src="js/160x600.js"></script>
+
+<script>
+var canvas, stage, exportRoot;
+
+function init() {
+	createjs.MotionGuidePlugin.install();
+
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var manifest = [
+		{src:"images/copyright.png", id:"copyright"},
+		{src:"images/cup_step1.png", id:"cup_step1"},
+		{src:"images/cup_step2.png", id:"cup_step2"},
+		{src:"images/cup_step3.png", id:"cup_step3"},
+		{src:"images/cut01_cloud.png", id:"cut01_cloud"},
+		{src:"images/cut02_cup01.png", id:"cut02_cup01"},
+		{src:"images/cut02_cup02.png", id:"cut02_cup02"},
+		{src:"images/cut02_cup03.png", id:"cut02_cup03"},
+		{src:"images/cut02_cup04.png", id:"cut02_cup04"},
+		{src:"images/cut02_cup05.png", id:"cut02_cup05"},
+		{src:"images/cut02_g2.png", id:"cut02_g2"},
+		{src:"images/cut02_txt1.png", id:"cut02_txt1"},
+		{src:"images/cut03_txt1.png", id:"cut03_txt1"},
+		{src:"images/cut04_btn.png", id:"cut04_btn"},
+		{src:"images/cut04_capsule.png", id:"cut04_capsule"},
+		{src:"images/cut04_g2.png", id:"cut04_g2"},
+		{src:"images/cut04_gift.png", id:"cut04_gift"},
+		{src:"images/cut04_line.png", id:"cut04_line"},
+		{src:"images/cut04_txt.png", id:"cut04_txt"},
+		{src:"images/logo.png", id:"logo"},
+		{src:"images/money_10.png", id:"money_10"},
+		{src:"images/money_5.png", id:"money_5"},
+		{src:"images/wallet.png", id:"wallet"}
+	];
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete() {
+	exportRoot = new lib._160x600();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(18);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+</script>
+</head>
+
+<body onload="init();" style="background-color:#D4D4D4; margin:0;">
+	<a href="javascript:window.open(window.clickTag)">
+	<canvas id="canvas" width="160" height="600" style="background-color:#ec80a8"></canvas>
+	</a>
+</body>
+</html>
