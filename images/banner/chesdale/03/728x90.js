@@ -412,17 +412,17 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/_1.png?1514298365342", id:"_1"},
-		{src:"images/_10.png?1514298365342", id:"_10"},
-		{src:"images/_11.png?1514298365342", id:"_11"},
-		{src:"images/_2.png?1514298365342", id:"_2"},
-		{src:"images/_3.png?1514298365342", id:"_3"},
-		{src:"images/_4.png?1514298365342", id:"_4"},
-		{src:"images/_5.png?1514298365342", id:"_5"},
-		{src:"images/_6.png?1514298365342", id:"_6"},
-		{src:"images/_7.png?1514298365342", id:"_7"},
-		{src:"images/_8.png?1514298365342", id:"_8"},
-		{src:"images/_9.png?1514298365342", id:"_9"}
+		{src:"images/1.png?1514298365342", id:"_1"},
+		{src:"images/10.png?1514298365342", id:"_10"},
+		{src:"images/11.png?1514298365342", id:"_11"},
+		{src:"images/2.png?1514298365342", id:"_2"},
+		{src:"images/3.png?1514298365342", id:"_3"},
+		{src:"images/4.png?1514298365342", id:"_4"},
+		{src:"images/5.png?1514298365342", id:"_5"},
+		{src:"images/6.png?1514298365342", id:"_6"},
+		{src:"images/7.png?1514298365342", id:"_7"},
+		{src:"images/8.png?1514298365342", id:"_8"},
+		{src:"images/9.png?1514298365342", id:"_9"}
 	],
 	preloads: []
 };
